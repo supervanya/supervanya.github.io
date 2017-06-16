@@ -1,10 +1,10 @@
 # Vanya's I M P O S S I B L E list 
 
 ### Travelling
-Visit 50 States [25](https://vano1993.github.io/States.md)
-Visit 50 Countries 
-Visit 50 Islands
-Visit 7 Continents [2]
+- Visit 50 States [25](https://vano1993.github.io/States.md)
+- Visit 50 Countries 
+- Visit 50 Islands
+- Visit 7 Continents [2]
 
 
 
