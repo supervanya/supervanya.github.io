@@ -1,1 +1,139 @@
-{}
+{
+  "name": "Quests",
+  "children": [
+    {
+      "name": "Major",
+      "children": [
+        {
+          "name": "InfoMaven",
+          "children": [
+            {
+              "name": "InfoMaven 1",
+              "size": 150
+            },
+            {
+              "name": "InfoMaven 2",
+              "size": 150
+            }
+          ]
+        },
+        {
+          "name": "Occupy Social Media",
+          "children": [
+            {
+              "name": "Level 1",
+              "size": 20
+            },
+            {
+              "name": "Level 2",
+              "size": 200
+            }
+          ]
+        },
+        {
+          "name": "Participation",
+          "children": [
+            {
+              "name": "Midterm",
+              "size": 50
+            },
+            {
+              "name": "Final",
+              "size": 50
+            }
+          ]
+        },
+        {
+          "name": "Battles (Quizzes)",
+          "children": [
+            {
+              "name": "Battle 1",
+              "size": 80
+            },
+            {
+              "name": "Battle 2",
+              "size": 80
+            },
+            {
+              "name": "Battle 3",
+              "size": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Minor",
+      "children": [
+        {
+          "name": "Intro (Required)",
+          "children": [
+            {
+              "name": "SyllaboQuest",
+              "size": 25
+            },
+            {
+              "name": "IntroQuest",
+              "size": 25
+            }
+          ]
+        },
+        {
+          "name": "Intro (Required)",
+          "children": [
+            {
+              "name": "SyllaboQuest",
+              "size": 25
+            },
+            {
+              "name": "IntroQuest",
+              "size": 25
+            }
+          ]
+        },
+        {
+          "name": "Writing Assignments",
+          "children": [
+            {
+              "name": "Biblio Quest",
+              "size": 30
+            },
+            {
+              "name": "ExploroQuest",
+              "size": 30
+            }
+          ]
+        },
+        {
+          "name": "RandoQuests",
+          "children": [
+            {
+              "name": "RandoQuest",
+              "size": 10
+            },
+            {
+              "name": "RandoQuest",
+              "size": 10
+            },
+            {
+              "name": "RandoQuest",
+              "size": 10
+            },
+            {
+              "name": "RandoQuest",
+              "size": 10
+            },
+            {
+              "name": "RandoQuest",
+              "size": 10
+            },
+            {
+              "name": "RandoQuest",
+              "size": 10
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
