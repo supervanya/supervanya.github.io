@@ -1,90 +1,22 @@
-Category,Level1,Level2,Level3,Level4,Federal,,GovXFer,State,Local,Total
-Sickness and disability,Pensions,Sickness and disability,,,0,,0,0,0,0
-Special Benefits,Pensions,Old age,Federal employee retirement and disability (602),Special Benefits,0.38,b,,,,0.38
-Foreign Service Retirement and Disability Fund,Pensions,Old age,Federal employee retirement and disability (602),Foreign Service Retirement and Disability Fund,0.893,b,,,,0.893
-Armed Forces Retirement Home,Pensions,Old age,Federal employee retirement and disability (602),Armed Forces Retirement Home,0.083,b,,,,0.083
-Other Capital Outlay  General  Other (G89),Other Spending,General public services n.e.c.,Other Capital Outlay  General  Other (G89),,0,g,0,0.7,7.1,7.8
-Federal Intergovernmental  All Other (B89),Other Spending,Transfers of a general character between,Federal Intergovernmental  All Other (B89),,0,g,41.2,0,0,41.2
-Interest on Treasury Debt Securities (gross),Interest,Public debt transactions,Interest on Treasury debt securities (gross) (901),Interest on Treasury Debt Securities (gross),283.936,b,,,,283.936
-Interest Paid to Trust Fund Receipt Accounts  Shadow Account,Interest,Public debt transactions,Interest on Treasury debt securities (gross) (901),Interest Paid to Trust Fund Receipt Accounts  Shadow Account,172.946,b,,,,172.946
-Interest Paid to Expenditure Accounts  Shadow Account,Interest,Public debt transactions,Interest on Treasury debt securities (gross) (901),Interest Paid to Expenditure Accounts  Shadow Account,4.043,b,,,,4.043
-Interest Paid to Federal Fund Receipt Accounts  Shadow Account,Interest,Public debt transactions,Interest on Treasury debt securities (gross) (901),Interest Paid to Federal Fund Receipt Accounts  Shadow Account,11.115,b,,,,11.115
-"Interest Received by Trust Fund, FSMI Fund",Interest,Public debt transactions,Interest received by onbudget trust funds (902),"Interest Received by Trust Fund, FSMI Fund",2.561,b,,,,2.561
-"FHI Trust Fund, Interest Received by Trust Funds",Interest,Public debt transactions,Interest received by onbudget trust funds (902),"FHI Trust Fund, Interest Received by Trust Funds",10.042,b,,,,10.042
-"Unemployment Trust Fund, Interest and Profits on Investments in Public Debt Securities",Interest,Public debt transactions,Interest received by onbudget trust funds (902),"Unemployment Trust Fund, Interest and Profits on Investments in Public Debt Securities",0.431,b,,,,0.431
-"Earnings on Investments, Military Retirement Fund",Interest,Public debt transactions,Interest received by onbudget trust funds (902),"Earnings on Investments, Military Retirement Fund",17.152,b,,,,17.152
-"Interest, Airport and Airway Trust Fund",Interest,Public debt transactions,Interest received by onbudget trust funds (902),"Interest, Airport and Airway Trust Fund",0.226,b,,,,0.226
-"NSLI Fund, Interest",Interest,Public debt transactions,Interest received by onbudget trust funds (902),"NSLI Fund, Interest",0.317,b,,,,0.317
-"FFB, TVA, and USPS Interest, Civil Service Retirement and Disability Fund",Interest,Public debt transactions,Interest received by onbudget trust funds (902),"FFB, TVA, and USPS Interest, Civil Service Retirement and Disability Fund",0.329,b,,,,0.329
-"Treasury Interest, Civil Service Retirement and Disability Fund",Interest,Public debt transactions,Interest received by onbudget trust funds (902),"Treasury Interest, Civil Service Retirement and Disability Fund",31.838,b,,,,31.838
-"Interest and Profits on Investments, Hazardous Substance Superfund",Interest,Public debt transactions,Interest received by onbudget trust funds (902),"Interest and Profits on Investments, Hazardous Substance Superfund",0.111,b,,,,0.111
-"Earnings on Investments, Leaking Underground Storage Tank Trust Fund",Interest,Public debt transactions,Interest received by onbudget trust funds (902),"Earnings on Investments, Leaking Underground Storage Tank Trust Fund",0.11,b,,,,0.11
-"Interest and Profits on Investments, Vaccine Injury Compensation Trust Fund",Interest,Public debt transactions,Interest received by onbudget trust funds (902),"Interest and Profits on Investments, Vaccine Injury Compensation Trust Fund",0.074,b,,,,0.074
-"Interest on Investments, Foreign Service Retirement and Disability Fund",Interest,Public debt transactions,Interest received by onbudget trust funds (902),"Interest on Investments, Foreign Service Retirement and Disability Fund",0.785,b,,,,0.785
-"Earnings on Investments, Harbor Maintenance Trust Fund",Interest,Public debt transactions,Interest received by onbudget trust funds (902),"Earnings on Investments, Harbor Maintenance Trust Fund",0.205,b,,,,0.205
-"FOASI, Interest Received by Trust Funds",Interest,Public debt transactions,Interest received by offbudget trust funds (903),"FOASI, Interest Received by Trust Funds",103.32,b,,,,103.32
-"FDI, Interest Received by Trust Funds",Interest,Public debt transactions,Interest received by offbudget trust funds (903),"FDI, Interest Received by Trust Funds",5.517,b,,,,5.517
-"Earnings on Investments, Abandoned Mine Reclamation Fund",Interest,Public debt transactions,Other interest (908),"Earnings on Investments, Abandoned Mine Reclamation Fund",0.056,b,,,,0.056
-"Interest on Loans to the Helium Fund, Department of Interior",Interest,Public debt transactions,Other interest (908),"Interest on Loans to the Helium Fund, Department of Interior",0.175,b,,,,0.175
-Interest on Loans to BPA,Interest,Public debt transactions,Other interest (908),Interest on Loans to BPA,0.336,b,,,,0.336
-Interest on Loans to Federal Financing Bank,Interest,Public debt transactions,Other interest (908),Interest on Loans to Federal Financing Bank,2.626,b,,,,2.626
-"Interest on Loans to National Flood Insurance Fund, DHS",Interest,Public debt transactions,Other interest (908),"Interest on Loans to National Flood Insurance Fund, DHS",0.099,b,,,,0.099
-Interest on Quota in International Monetary Fund,Interest,Public debt transactions,Other interest (908),Interest on Quota in International Monetary Fund,0.055,b,,,,0.055
-Interest Received from Credit Financing Accounts,Interest,Public debt transactions,Other interest (908),Interest Received from Credit Financing Accounts,52.888,b,,,,52.888
-Interest on Loans and Repayable Advances to the Federal Unemployment Account,Interest,Public debt transactions,Other interest (908),Interest on Loans and Repayable Advances to the Federal Unemployment Account,0.85,b,,,,0.85
-Payment to the Resolution Funding Corporation,Interest,Public debt transactions,Other interest (908),Payment to the Resolution Funding Corporation,2.628,b,,,,2.628
-Interest Paid to Credit Financing Accounts,Interest,Public debt transactions,Other interest (908),Interest Paid to Credit Financing Accounts,12.82,b,,,,12.82
-"Refunding Internal Revenue Collections, Interest",Interest,Public debt transactions,Other interest (908),"Refunding Internal Revenue Collections, Interest",3.208,b,,,,3.208
-Interest on Loans or Advances to the Extended Unemployment Compensation Account,Interest,Public debt transactions,Other interest (908),Interest on Loans or Advances to the Extended Unemployment Compensation Account,0.46,b,,,,0.46
-"Earnings on Investments, Nuclear Waste Disposal Fund",Interest,Public debt transactions,Other interest (908),"Earnings on Investments, Nuclear Waste Disposal Fund",1.571,b,,,,1.571
-"Earnings on Investments, Decontamination and Decommissioning Fund",Interest,Public debt transactions,Other interest (908),"Earnings on Investments, Decontamination and Decommissioning Fund",0.12,b,,,,0.12
-"Earnings on Investments, DoD MedicareEligible Retiree Health Care Fund",Interest,Public debt transactions,Other interest (908),"Earnings on Investments, DoD MedicareEligible Retiree Health Care Fund",7.43,b,,,,7.43
-"Earnings on Investments, Postal Service Retiree Health Benefits Fund",Interest,Public debt transactions,Other interest (908),"Earnings on Investments, Postal Service Retiree Health Benefits Fund",1.773,b,,,,1.773
-"Earnings on Investments, DC Federal Pension Fund",Interest,Public debt transactions,Other interest (908),"Earnings on Investments, DC Federal Pension Fund",0.094,b,,,,0.094
-"General Fund Proprietary Interest Receipts, not Otherwise Classified",Interest,Public debt transactions,Other interest (908),"General Fund Proprietary Interest Receipts, not Otherwise Classified",0.09,b,,,,0.09
-"Gains and Losses on NonFederal Securities, National Railroad Retirement Investment Trust",Interest,Public debt transactions,Other investment income (909),"Gains and Losses on NonFederal Securities, National Railroad Retirement Investment Trust",0.19,b,,,,0.19
-"Interest and Dividends on NonFederal Securities, National Railroad Retirement Investment Trust",Interest,Public debt transactions,Other investment income (909),"Interest and Dividends on NonFederal Securities, National Railroad Retirement Investment Trust",0.455,b,,,,0.455
-General  Interest on Debt (I89),Interest,Public debt transactions,General  Interest on Debt (I89),,0,g,0,49.8,65,114.8
-Balance,Balance,,,,0,g,0,0,0,0
-Federal Intergovernmental  General Local Government Support (B30),Total Spending,Total,Federal Intergovernmental  General Local Government Support (B30),,0,g,0.8,0,0,0.8
-Federal Intergovernmental  All Other (B89),Total Spending,Total,Federal Intergovernmental  All Other (B89),,0,g,41.2,0,0,41.2
-"Federal Intergovernmental  Natural Resources, Agriculture (Disc. 2005) (B54)",Total Spending,Total,"Federal Intergovernmental  Natural Resources, Agriculture (Disc. 2005) (B54)",,0,,0,0,0,0
-Federal Intergovernmental  Natural Resources (B59),Total Spending,Total,Federal Intergovernmental  Natural Resources (B59),,0,g,2.6,0,0,2.6
-Federal Intergovernmental  Electric Utilities (B92),Total Spending,Total,Federal Intergovernmental  Electric Utilities (B92),,0,g,0.2,0,0,0.2
-Federal Intergovernmental  Gas Utilities (B93),Total Spending,Total,Federal Intergovernmental  Gas Utilities (B93),,0,,0,0,0,0
-Federal Intergovernmental  Air Transportation (B01),Total Spending,Total,Federal Intergovernmental  Air Transportation (B01),,0,g,2.9,0,0,2.9
-Federal Intergovernmental  Highways (B46),Total Spending,Total,Federal Intergovernmental  Highways (B46),,0,g,46.4,0,0,46.4
-Federal Intergovernmental  Transit Utilities (B94),Total Spending,Total,Federal Intergovernmental  Transit Utilities (B94),,0,g,11.6,0,0,11.6
-Federal Intergovernmental  Sewerage (B80),Total Spending,Total,Federal Intergovernmental  Sewerage (B80),,0,g,3.4,0,0,3.4
-Federal Intergovernmental  Water Utilities (B91),Total Spending,Total,Federal Intergovernmental  Water Utilities (B91),,0,g,1.7,0,0,1.7
-Federal Intergovernmental  Health and Hospitals (B42),Total Spending,Total,Federal Intergovernmental  Health and Hospitals (B42),,0,g,28.2,0,0,28.2
-Intergovernmental Revenue from Federal  Environmental Health (NEW for 2007) (B43),Total Spending,Total,Intergovernmental Revenue from Federal  Environmental Health (NEW for 2007) (B43),,0,,0,0,0,0
-Federal Intergovernmental  Public Welfare (B79),Total Spending,Total,Federal Intergovernmental  Public Welfare (B79),,0,g,337.8,0,0,337.8
-Federal Intergovernmental  Education (B21),Total Spending,Total,Federal Intergovernmental  Education (B21),,0,g,104.4,0,0,104.4
-Federal Intergovernmental  Employment Security Administration (B22),Total Spending,Total,Federal Intergovernmental  Employment Security Administration (B22),,0,g,5.5,0,0,5.5
-Federal Intergovernmental  Housing and Community Development (B50),Total Spending,Total,Federal Intergovernmental  Housing and Community Development (B50),,0,g,48.9,0,0,48.9
-Total federal outlays (000),Total Spending,Total,Total federal outlays (000),,3803.4,b,0,0,0,3803.4
-Total state/local outlays (E00),Total Spending,Total,Total state/local outlays (E00),,0,g,0,"1,511.30","1,602.20",3113.5
-Total federal outlays (000),Federal Deficit,Total Spending,Total federal outlays (000),,3803.4,b,0,0,0,3803.4
-Total Revenue (FTR),Federal Deficit,Total Revenue,Total Revenue (FTR),,2902,b,0,0,0,2902
-Long Term Debt Outstanding  Full Faith and Credit  Water Utilities (Disc. 2005) (41A),Gross Public Debt,Public Debt,Long Term Debt Outstanding  Full Faith and Credit  Water Utilities (Disc. 2005) (41A),,0,,0,0,0,0
-Long Term Debt Outstanding  Full Faith and Credit  Electric Utilities (Disc. 2005) (41B),Gross Public Debt,Public Debt,Long Term Debt Outstanding  Full Faith and Credit  Electric Utilities (Disc. 2005) (41B),,0,,0,0,0,0
-Long Term Debt Outstanding  Full Faith and Credit  Gas Utilities (Disc. 2005) (41C),Gross Public Debt,Public Debt,Long Term Debt Outstanding  Full Faith and Credit  Gas Utilities (Disc. 2005) (41C),,0,,0,0,0,0
-Long Term Debt Outstanding  Full Faith and Credit  Transit Utilities (Disc. 2005) (41D),Gross Public Debt,Public Debt,Long Term Debt Outstanding  Full Faith and Credit  Transit Utilities (Disc. 2005) (41D),,0,,0,0,0,0
-Long Term Debt Outstanding  Full Faith and Credit  Elementary and Secondary Educati (41F),Gross Public Debt,Public Debt,Long Term Debt Outstanding  Full Faith and Credit  Elementary and Secondary Educati (41F),,0,,0,0,0,0
-Long Term Debt Outstanding  Full Faith and Credit  Higher Education (Disc. 2005) (41G),Gross Public Debt,Public Debt,Long Term Debt Outstanding  Full Faith and Credit  Higher Education (Disc. 2005) (41G),,0,,0,0,0,0
-"Long Term Debt Outstanding  Full Faith and Credit  Other, NEC (Disc. 2005) (41X)",Gross Public Debt,Public Debt,"Long Term Debt Outstanding  Full Faith and Credit  Other, NEC (Disc. 2005) (41X)",,0,,0,0,0,0
-Long Term Debt Outstanding Nonguaranteed  Water Utilities (Disc. 2005) (44A),Gross Public Debt,Public Debt,Long Term Debt Outstanding Nonguaranteed  Water Utilities (Disc. 2005) (44A),,0,,0,0,0,0
-Long Term Debt Outstanding Nonguaranteed  Electric Utilities (Disc. 2005) (44B),Gross Public Debt,Public Debt,Long Term Debt Outstanding Nonguaranteed  Electric Utilities (Disc. 2005) (44B),,0,,0,0,0,0
-Long Term Debt Outstanding Nonguaranteed  Gas Utilities (Disc. 2005) (44C),Gross Public Debt,Public Debt,Long Term Debt Outstanding Nonguaranteed  Gas Utilities (Disc. 2005) (44C),,0,,0,0,0,0
-Long Term Debt Outstanding Nonguaranteed  Transit Utilities (Disc. 2005) (44D),Gross Public Debt,Public Debt,Long Term Debt Outstanding Nonguaranteed  Transit Utilities (Disc. 2005) (44D),,0,,0,0,0,0
-Long Term Debt Outstanding Nonguaranteed  Elementary and Secondary Education (Disc.  (44F),Gross Public Debt,Public Debt,Long Term Debt Outstanding Nonguaranteed  Elementary and Secondary Education (Disc.  (44F),,0,,0,0,0,0
-Long Term Debt Outstanding Nonguaranteed  Higher Education (Disc. 2005) (44G),Gross Public Debt,Public Debt,Long Term Debt Outstanding Nonguaranteed  Higher Education (Disc. 2005) (44G),,0,,0,0,0,0
-"Longterm Debt Outstanding, End Of Fiscal Year, Public Debt For Private Purposes (44T)",Gross Public Debt,Public Debt,"Longterm Debt Outstanding, End Of Fiscal Year, Public Debt For Private Purposes (44T)",,0,g,0,394.2,226.6,620.7
-"Long Term Debt Outstanding Nonguaranteed  Other, NEC (Disc. 2005) (44X)",Gross Public Debt,Public Debt,"Long Term Debt Outstanding Nonguaranteed  Other, NEC (Disc. 2005) (44X)",,0,,0,0,0,0
-Long Term Debt Outstanding Unspecified Public Purpose (49U),Gross Public Debt,Public Debt,Long Term Debt Outstanding Unspecified Public Purpose (49U),,0,g,0,762.5,"1,599.10",2361.6
-Short Term Debt Outstanding  End of Fiscal Year (64V),Gross Public Debt,Public Debt,Short Term Debt Outstanding  End of Fiscal Year (64V),,0,g,0,3.2,22.7,19.6
-Gross Public Debt (FDB),Gross Public Debt,Public Debt,Gross Public Debt (FDB),,0,,0,0,0,0
-Debt Held by Public: Other (FDO),Gross Public Debt,Public Debt,Debt Held by Public: Other (FDO),,10559.7,e,0,0,0,10559.7
-Debt Held by Federal Government Accounts (FDG),Gross Public Debt,Public Debt Held by Government,Debt Held by Federal Government Accounts (FDG),,4911.3,b,0,0,0,4911.3
-,,Level2,Level3,Level4,,,,,,
+Category,Level1,Level2,Level3,Level4,Points,,GovXFer,Difficulty,Time Commitment,Total
+InfoMaven 1,Pensions,Major,InfoMaven,,150,,0,100,0,0
+InfoMaven 2,Pensions,Major,InfoMaven,,150,b,,100,,0.38
+Level 1,Pensions,Major,Occupy Social Media,,20,b,,20,,0.893
+Level 2,Pensions,Major,Occupy Social Media,,200,b,,150,,0.083
+Midterm,Other Spending,Major,Participation,,50,g,0,30,7.1,7.8
+Final,Other Spending,Major,Participation,,50,g,41.2,30,0,41.2
+Battle 1,Interest,Major,Battles (Quizzes),,80,b,,50,,283.936
+Battle 2,Interest,Major,Battles (Quizzes),,80,b,,50,,172.946
+Battle 3,Interest,Major,Battles (Quizzes),,80,b,,50,,4.043
+SyllaboQuest,Interest,Minor,Intro (Required),,25,b,,10,,11.115
+IntroQuest,Interest,Minor,Intro (Required),,25,b,,25,,2.561
+SyllaboQuest,Interest,Minor,Intro (Required),,25,b,,15,,10.042
+IntroQuest,Interest,Minor,Intro (Required),,25,b,,15,,0.431
+Biblio Quest,Interest,Minor,Writing Assignments,,30,b,,80,,17.152
+ExploroQuest,Interest,Minor,Writing Assignments,,30,b,,80,,0.226
+RandoQuest,Interest,Minor,RandoQuests,,10,b,,30,,0.317
+RandoQuest,Interest,Minor,RandoQuests,,10,b,,30,,0.329
+RandoQuest,Interest,Minor,RandoQuests,,10,b,,30,,31.838
+RandoQuest,Interest,Minor,RandoQuests,,10,b,,30,,0.111
+RandoQuest,Interest,Minor,RandoQuests,,10,b,,30,,0.11
+RandoQuest,Interest,Minor,RandoQuests,,10,b,,30,,0.074
