@@ -1,22 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
+    <head>
+      <meta charset="UTF-8">
+      <title>Hello World Test Page</title>
+      <style>
+          div {
+              color: orange;
+              font-size: 12pt;
+          }
+
+          .french {
+              color: blue;
+              font-style: italic;
+              font-family: helvetica;
+          }
+
+          .goodbye {
+              color: gray;
+              font-size: 18pt;
+              font-style: italic;
+              font-family: helvetica;
+              }
+
+      </style>
+    </head>
 <body>
         <meta charset="UTF-8"/>
-        <h1>Hello World!</h1>
-        <p>This is the page where we say hello!</p></head>
+        <h1>Good Morning Nastya!</h1>
+        <p>This is the page where we say hello to you!</p></head>
         <div id "hello-list">
-                <ul>
+                <ol>
                     <li> Hola! </li>
                     <li> Bonjour! </li>
                     <li> Ni hao! </li>
                     <li> Namaste! </li>
                     <li> Salaam! </li>
+                    <li class="french"> Прывятанне! </li>
                 </ul>
         </div>
         <img src="http://www.threadbombing.com/data/media/2/hey_over_here.gif" width=70%/>
 
         <p>And now, <a href="http://www.omniglot.com/language/phrases/hello.htm">say hello in lots of languages!</a></p>
+
+              <div id='goodbye-list' class='goodbye'>
+              We say goodbye!
+                <ol>
+                  <li> Adios! </li>
+                  <li class="french"> Au Revior </li>
+                  <li> Zaijian! </li>
+                  <li> Alavida! </li>
+                  <li> Wadaeaan! </li>
+                </ol>
+              </div>
+
 
 </body>
 </html>
