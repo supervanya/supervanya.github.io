@@ -10,15 +10,15 @@ var b = {
 
 // Mapping of step names to colors.
 var colors = {
-  "'Class Attendance'": "#5687d1",
-  "'Reading Quizzes'": "#7b615c",
+  "'Attendance'": "#5687d1",
+  "'Quiz'": "#7b615c",
   "'Learning from Playing a Game'": "#de783b",
   "'Learning Game Reviews'": "#6ab975",
-  "'Boss Battles'": "#a173d1",
+  "'Boss Battle'": "#a173d1",
   "end": "#5687d1",
 
 
-  "'Class Attendance'":"#5687d1",
+  "'Attendance'":"#5687d1",
   "'January 4th - Introductions'":"#a173d1",
   "'January 9th - What Makes Games Good for Learning?'":"#a173d1",
   "'January 11th - Balanced Design'":"#a173d1",
@@ -49,8 +49,6 @@ var colors = {
   "'April 17th - Last Class'":"#a173d1",
   "'Copy of February 8th - Serious Games'":"#a173d1",
 
-
-  "'Reading Quizzes'":"#7b615c",
   "'Week 2 Readings'":"#7b615c",
   "'Week 3 Readings'":"#7b615c",
   "'Week 4 Readings'":"#7b615c",
