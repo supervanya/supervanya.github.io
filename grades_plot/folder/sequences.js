@@ -10,16 +10,81 @@ var b = {
 
 // Mapping of step names to colors.
 var colors = {
-  "home": "#5687d1",
-  "product": "#7b615c",
-  "search": "#de783b",
-  "account": "#6ab975",
-  "other": "#a173d1",
-  "end": "#bbbbbb"
+  "'Class Attendance'": "#5687d1",
+  "'Reading Quizzes'": "#7b615c",
+  "'Learning from Playing a Game'": "#de783b",
+  "'Learning Game Reviews'": "#6ab975",
+  "'Boss Battles'": "#a173d1",
+  "end": "#5687d1",
+
+
+  "'Class Attendance'":"#5687d1",
+  "'January 4th - Introductions'":"#a173d1",
+  "'January 9th - What Makes Games Good for Learning?'":"#a173d1",
+  "'January 11th - Balanced Design'":"#a173d1",
+  "'January 16th - Learning Theories'":"#a173d1",
+  "'January 18th - Expertise and Transfer'":"#a173d1",
+  "'January 23rd - Motivation & First Poster Session'":"#a173d1",
+  "'January 25th - Finish the Scavenger Hunt'":"#a173d1",
+  "'January 30th - School Design(s) & Second Posters'":"#a173d1",
+  "'February 1st - Self Determination Theory'":"#a173d1",
+  "'February 6th - Posters & Team Time'":"#a173d1",
+  "'February 8th - Serious Games'":"#a173d1",
+  "'February 13th - No Class Meeting'":"#a173d1",
+  "'February 15th - School *as* a Game'":"#a173d1",
+  "'February 20th - Research Methods (and Posters)'":"#a173d1",
+  "'February 22nd - Team Time & Posters'":"#a173d1",
+  "'March 6th - Ender's Game'":"#a173d1",
+  "'March 8th - What do you want to know?'":"#a173d1",
+  "'March 13th - Gender (and Posters, Part Deux)'":"#a173d1",
+  "'March 15th - Universal Design for Learning'":"#a173d1",
+  "'March 20th - Stinkin' Badges (& Posters)'":"#a173d1",
+  "'March 22nd - Maker Spaces & Computational Thinking'":"#a173d1",
+  "'March 27th - Beyond Reality'":"#a173d1",
+  "'March 29th - TaleBlazer Design (& Posters)'":"#a173d1",
+  "'April 3rd - Team Time (ARGs) and Final Projects'":"#a173d1",
+  "'April 5th - Team Time (ARGs) and Final Projects'":"#a173d1",
+  "'April 10th - Final posters and ARG Competition!'":"#a173d1",
+  "'April 12th - Violence & Cheating'":"#a173d1",
+  "'April 17th - Last Class'":"#a173d1",
+  "'Copy of February 8th - Serious Games'":"#a173d1",
+
+
+  "'Reading Quizzes'":"#7b615c",
+  "'Week 2 Readings'":"#7b615c",
+  "'Week 3 Readings'":"#7b615c",
+  "'Week 4 Readings'":"#7b615c",
+  "'Week 5 Readings'":"#7b615c",
+  "'Week 6 Readings'":"#7b615c",
+  "'Week 7 Readings'":"#7b615c",
+  "'Week 8 Readings'":"#7b615c",
+  "'Week 10 Readings'":"#7b615c",
+  "'Week 11 Readings'":"#7b615c",
+  "'Week 12 Readings'":"#7b615c",
+  "'Week 13 Readings'":"#7b615c",
+  "'Week 15 Readings'":"#7b615c",
+
+
+  "'Learning from Playing a Game'":"#de783b",
+  "'Game Play Selection Paper'":"#de783b",
+  "'First Poster Presentation'":"#de783b",
+  "'Second Poster Presentation'":"#de783b",
+  "'Game Play Reflection Paper'":"#de783b",
+
+  "'Learning Game Review #1'":"#6ab975",
+  "'Learning Game Review #2'":"#6ab975",
+  "'Learning Game Review #3'":"#6ab975",
+
+
+  "'Individual Project/Paper #1'":"#a173d1",
+  "'Group Game Design Step 2 - Learning Goals & Game OV'":"#a173d1",
+  "'Group Game Design Step 3 - Assessment & Logic Model'":"#a173d1",
+  "'Group Game Design Project'":"#a173d1",
+  "'Individual Project/Paper #2'":"#a173d1"
 };
 
 // Total size of all segments; we set this later, after loading the data.
-var totalSize = 0; 
+var totalSize = 0;
 
 var vis = d3.select("#chart").append("svg:svg")
     .attr("width", width)
@@ -39,7 +104,7 @@ var arc = d3.arc()
 
 // Use d3.text and d3.csvParseRows so that we do not need to have a header
 // row, and can receive the csv as an array of arrays.
-d3.text("visit-sequences.csv", function(text) {
+d3.text("https://supervanya.github.io/grades_plot/folder/visit-sequences.csv", function(text) {
   var csv = d3.csvParseRows(text);
   var json = buildHierarchy(csv);
   createVisualization(json);
@@ -63,7 +128,7 @@ function createVisualization(json) {
   var root = d3.hierarchy(json)
       .sum(function(d) { return d.size; })
       .sort(function(a, b) { return b.value - a.value; });
-  
+
   // For efficiency, filter nodes to keep only those large enough to see.
   var nodes = partition(root).descendants()
       .filter(function(d) {
@@ -255,7 +320,7 @@ function toggleLegend() {
 
 // Take a 2-column CSV and transform it into a hierarchical structure suitable
 // for a partition layout. The first column is a sequence of step names, from
-// root to leaf, separated by hyphens. The second column is a count of how 
+// root to leaf, separated by hyphens. The second column is a count of how
 // often that sequence occurred.
 function buildHierarchy(csv) {
   var root = {"name": "root", "children": []};
