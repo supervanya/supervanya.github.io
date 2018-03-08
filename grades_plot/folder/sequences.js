@@ -12,8 +12,8 @@ var b = {
 var colors = {
   "'Attendance'": "#5687d1",
   "'Quiz'": "#7b615c",
-  "'Learning from Playing a Game'": "#de783b",
-  "'Learning Game Reviews'": "#6ab975",
+  "'Playing a Game'": "#de783b",
+  "'Learning Game'": "#6ab975",
   "'Boss Battle'": "#a173d1",
   "end": "#5687d1",
 
