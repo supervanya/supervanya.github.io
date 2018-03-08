@@ -22,7 +22,10 @@ assignments = soup.find_all(class_="assignment_type student")
 for category in assignments:
     # assignmentid = category["id"]
     as_kind = category.find(class_="assignment-type-name").text
-    # print(as_kind)
+    print("<tr>")
+
+    print("<th>"+as_kind+"</th>")
+    print("</tr>")
     for assignment in category.find_all(class_="assignment-container"):
         # print(type(assignment))
 
@@ -41,12 +44,16 @@ for category in assignments:
             string = "'{}'-'{}',{}".format(as_kind, name, points)
             csv.append(string)
         except:
-            print(assignment.find(class_="assignment-info assignment-points"))
+            pass
+            # print(assignment.find(class_="assignment-info assignment-points"))
+        print("<tr>")
+        print("<th>"+name+"</th>"+"<th>"+points_text+"</th>")
+        print("</tr>\n")
 
     # print("-"*20)
 
-for line in csv:
-    print(line)
+# for line in csv:
+#     print(line)
 
 
 #

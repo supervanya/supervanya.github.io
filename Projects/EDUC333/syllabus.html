@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sequences sunburst</title>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
+  <link rel="stylesheet" type="text/css" href="sequences.css"/>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <title>Syllabus 2.0</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+    div#content {
+        background: white;
+    }
+
+    div#content iframe {
+        height: 400px;
+        width: 100%;
+    }
+
+    div#content iframe {
+        height: 400px;
+        width: 100%;
+    }
+
+    div#content2 {
+    position: fixed;
+    left: 40px;
+    min-width: 2000px;
+    width: 2000px;
+    background: white;
+}
+  </style>
+
+
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>The Sillybus 2.0</h1>
+  <p>New interractive home base of your course!</p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="container">
+        <div class="col-sm-4">
+          <h3>Class Assignments</h3>
+          <p>Here you can explore all of the assignments we will cover during the course</p>
+          <div class="container">
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">View Schedule</button>
+            <div id="demo" class="collapse">
+              <div id="content">
+                <iframe src="assignments.html" name="frame2" id="frame2" frameborder="0" marginwidth="0" marginheight="0" scrolling="auto" onload="" allowtransparency="false"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <h3>Class Schedule</h3>
+      <p>here is the calendar for the course</p>
+      <div class="container">
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <h3>Announcements</h3>
+      <p>All the anouncements will be kept here</p>
+    </div>
+  </div>
+</div>
+
+<!-- this is a collapsable container -->
+<!-- <div class="container">
+  <h2>Course Structure</h2>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">View Schedule</button>
+  <div id="demo" class="collapse">
+    <div id="content">
+      <iframe src="assignments.html" name="frame2" id="frame2" frameborder="0" marginwidth="0" marginheight="0" scrolling="auto" onload="" allowtransparency="false"></iframe>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2>Course Structure</h2>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">View Schedule</button>
+  <div id="demo" class="collapse">
+    <div id="content">
+      <iframe src="assignments.html" name="frame2" id="frame2" frameborder="0" marginwidth="0" marginheight="0" scrolling="auto" onload="" allowtransparency="false"></iframe>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+
+
+
+<div class="container">
+  <h2>Ponts Breakdow!</h2>
+  <p>Here is where the fun begins! <br>Before signining up for the course,
+    take a look at the assignemtns and the amount of points they yild.<br>
+    Take note of the type of asignment they are!<br></p>
+    <p>When you hover over the asignment category or the asignment
+      itself - notice the indicator in the middle showing you how
+      many points the asignment is worth total</p>
+      <p>You can click on the legend checkbox to show asignment types and their respective colors</p>
+
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">show / hide</button>
+
+  <div id="demo3" class="collapse">
+      <div>
+        <iframe src="sub/index.html" height=800px width=1170px frameborder="0" marginwidth="0" marginheight="0" scrolling="no" onload="" allowtransparency="false"></iframe>
+      </div>
+  </div>
+</div>
+
+
+</body>
+</html>

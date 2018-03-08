@@ -5,80 +5,84 @@ var radius = Math.min(width, height) / 2;
 
 // Breadcrumb dimensions: width, height, spacing, width of tip/tail.
 var b = {
-  w: 75, h: 30, s: 3, t: 10
+  w: 175, h: 30, s: 3, t: 10
 };
 
 // Mapping of step names to colors.
 var colors = {
-  "'Attendance'": "#5687d1",
-  "'Quiz'": "#7b615c",
-  "'Playing a Game'": "#de783b",
-  "'Learning Game'": "#6ab975",
-  "'Boss Battle'": "#a173d1",
-  "end": "#5687d1",
+  "'Attendance'": "#000013",
+  "'Quiz'": "#ee2276",
+  "'System Quiz'": "#ee2276",
+  "'Grading System Quiz'": "#ee2276",
+  "'Playing a Game'": "#31aabd",
+  "'Learning Game'": "#00274e",
+  "'Boss Battle'": "#876f94",
+  "end": "#000013",
 
 
-  "'Attendance'":"#5687d1",
-  "'January 4th - Introductions'":"#a173d1",
-  "'January 9th - What Makes Games Good for Learning?'":"#a173d1",
-  "'January 11th - Balanced Design'":"#a173d1",
-  "'January 16th - Learning Theories'":"#a173d1",
-  "'January 18th - Expertise and Transfer'":"#a173d1",
-  "'January 23rd - Motivation & First Poster Session'":"#a173d1",
-  "'January 25th - Finish the Scavenger Hunt'":"#a173d1",
-  "'January 30th - School Design(s) & Second Posters'":"#a173d1",
-  "'February 1st - Self Determination Theory'":"#a173d1",
-  "'February 6th - Posters & Team Time'":"#a173d1",
-  "'February 8th - Serious Games'":"#a173d1",
-  "'February 13th - No Class Meeting'":"#a173d1",
-  "'February 15th - School *as* a Game'":"#a173d1",
-  "'February 20th - Research Methods (and Posters)'":"#a173d1",
-  "'February 22nd - Team Time & Posters'":"#a173d1",
-  "'March 6th - Ender's Game'":"#a173d1",
-  "'March 8th - What do you want to know?'":"#a173d1",
-  "'March 13th - Gender (and Posters, Part Deux)'":"#a173d1",
-  "'March 15th - Universal Design for Learning'":"#a173d1",
-  "'March 20th - Stinkin' Badges (& Posters)'":"#a173d1",
-  "'March 22nd - Maker Spaces & Computational Thinking'":"#a173d1",
-  "'March 27th - Beyond Reality'":"#a173d1",
-  "'March 29th - TaleBlazer Design (& Posters)'":"#a173d1",
-  "'April 3rd - Team Time (ARGs) and Final Projects'":"#a173d1",
-  "'April 5th - Team Time (ARGs) and Final Projects'":"#a173d1",
-  "'April 10th - Final posters and ARG Competition!'":"#a173d1",
-  "'April 12th - Violence & Cheating'":"#a173d1",
-  "'April 17th - Last Class'":"#a173d1",
-  "'Copy of February 8th - Serious Games'":"#a173d1",
+  "'Attendance'":"#000013",
+  "'January 4th - Introductions'":"#876f94",
+  "'January 9th - What Makes Games Good for Learning?'":"#876f94",
+  "'January 11th - Balanced Design'":"#876f94",
+  "'January 16th - Learning Theories'":"#876f94",
+  "'January 18th - Expertise and Transfer'":"#876f94",
+  "'January 23rd - Motivation & First Poster Session'":"#876f94",
+  "'January 25th - Finish the Scavenger Hunt'":"#876f94",
+  "'January 30th - School Design(s) & Second Posters'":"#876f94",
+  "'February 1st - Self Determination Theory'":"#876f94",
+  "'February 6th - Posters & Team Time'":"#876f94",
+  "'February 8th - Serious Games'":"#876f94",
+  "'February 13th - No Class Meeting'":"#876f94",
+  "'February 15th - School *as* a Game'":"#876f94",
+  "'February 20th - Research Methods (and Posters)'":"#876f94",
+  "'February 22nd - Team Time & Posters'":"#876f94",
+  "'March 6th - Ender's Game'":"#876f94",
+  "'March 8th - What do you want to know?'":"#876f94",
+  "'March 13th - Gender (and Posters, Part Deux)'":"#876f94",
+  "'March 15th - Universal Design for Learning'":"#876f94",
+  "'March 20th - Stinkin' Badges (& Posters)'":"#876f94",
+  "'March 22nd - Maker Spaces & Computational Thinking'":"#876f94",
+  "'March 27th - Beyond Reality'":"#876f94",
+  "'March 29th - TaleBlazer Design (& Posters)'":"#876f94",
+  "'April 3rd - Team Time (ARGs) and Final Projects'":"#876f94",
+  "'April 5th - Team Time (ARGs) and Final Projects'":"#876f94",
+  "'April 10th - Final posters and ARG Competition!'":"#876f94",
+  "'April 12th - Violence & Cheating'":"#876f94",
+  "'April 17th - Last Class'":"#876f94",
+  "'Copy of February 8th - Serious Games'":"#876f94",
 
-  "'Week 2 Readings'":"#7b615c",
-  "'Week 3 Readings'":"#7b615c",
-  "'Week 4 Readings'":"#7b615c",
-  "'Week 5 Readings'":"#7b615c",
-  "'Week 6 Readings'":"#7b615c",
-  "'Week 7 Readings'":"#7b615c",
-  "'Week 8 Readings'":"#7b615c",
-  "'Week 10 Readings'":"#7b615c",
-  "'Week 11 Readings'":"#7b615c",
-  "'Week 12 Readings'":"#7b615c",
-  "'Week 13 Readings'":"#7b615c",
-  "'Week 15 Readings'":"#7b615c",
-
-
-  "'Learning from Playing a Game'":"#de783b",
-  "'Game Play Selection Paper'":"#de783b",
-  "'First Poster Presentation'":"#de783b",
-  "'Second Poster Presentation'":"#de783b",
-  "'Game Play Reflection Paper'":"#de783b",
-
-  "'Learning Game Review #1'":"#6ab975",
-  "'Learning Game Review #2'":"#6ab975",
-  "'Learning Game Review #3'":"#6ab975",
+  "'Week 2 Readings'":"#ee2276",
+  "'Week 3 Readings'":"#ee2276",
+  "'Week 4 Readings'":"#ee2276",
+  "'Week 5 Readings'":"#ee2276",
+  "'Week 6 Readings'":"#ee2276",
+  "'Week 7 Readings'":"#ee2276",
+  "'Week 8 Readings'":"#ee2276",
+  "'Week 10 Readings'":"#ee2276",
+  "'Week 11 Readings'":"#ee2276",
+  "'Week 12 Readings'":"#ee2276",
+  "'Week 13 Readings'":"#ee2276",
+  "'Week 15 Readings'":"#ee2276",
 
 
-  "'Individual Project/Paper #1'":"#a173d1",
-  "'Group Game Design Step 2 - Learning Goals & Game OV'":"#a173d1",
-  "'Group Game Design Step 3 - Assessment & Logic Model'":"#a173d1",
-  "'Group Game Design Project'":"#a173d1",
-  "'Individual Project/Paper #2'":"#a173d1"
+  "'Learning from Playing a Game'":"#31aabd",
+  "'Game Play Selection Paper'":"#31aabd",
+  "'First Poster Presentation'":"#31aabd",
+  "'Second Poster Presentation'":"#31aabd",
+  "'Game Play Reflection Paper'":"#31aabd",
+
+  "'Learning Game Review #1'":"#00274e",
+  "'Learning Game Review #2'":"#00274e",
+  "'Learning Game Review #3'":"#00274e",
+
+
+  "'Individual Project/Paper #1'":"#876f94",
+  "'Group Game Design Step 2 - Learning Goals & Game OV'":"#876f94",
+  "'Group Game Design Step 3 - Assessment & Logic Model'":"#876f94",
+  "'Group Game Design Project'":"#876f94",
+  "'Individual Project/Paper #2'":"#876f94"
+
+
 };
 
 // Total size of all segments; we set this later, after loading the data.
@@ -152,9 +156,8 @@ function createVisualization(json) {
 
 // Fade all but the current sequence, and show it in the breadcrumb trail.
 function mouseover(d) {
-
   var percentage = (100 * d.value / totalSize).toPrecision(3);
-  var percentageString = percentage + "%";
+  var percentageString = d.value + "\n" + percentage + "%\n";
   if (percentage < 0.1) {
     percentageString = "< 0.1%";
   }
@@ -278,7 +281,7 @@ function drawLegend() {
 
   // Dimensions of legend item: width, height, spacing, radius of rounded rect.
   var li = {
-    w: 75, h: 30, s: 3, r: 3
+    w: 375, h: 30, s: 3, r: 3
   };
 
   var legend = d3.select("#legend").append("svg:svg")
