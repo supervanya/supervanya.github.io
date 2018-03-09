@@ -102,7 +102,7 @@ var arc = d3.arc()
 
 // Use d3.text and d3.csvParseRows so that we do not need to have a header
 // row, and can receive the csv as an array of arrays.
-d3.text("https://supervanya.github.io/grades_plot/folder/visit-sequences.csv", function(text) {
+d3.text("https://supervanya.github.io/grades_plot/766f8f6d31f645c39f488a0befa1e3c8-9fc86efac379f228749b2de3537acd629c0867c8/visit-sequences.csv", function(text) {
   var csv = d3.csvParseRows(text);
   var json = buildHierarchy(csv);
   createVisualization(json);

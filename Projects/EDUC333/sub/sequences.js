@@ -10,13 +10,13 @@ var b = {
 
 // Mapping of step names to colors.
 var colors = {
-  "'Attendance'": "#000013",
+  "'Class Attendance'": "#000013",
   "'Quiz'": "#ee2276",
   "'System Quiz'": "#ee2276",
   "'Grading System Quiz'": "#ee2276",
   "'Playing a Game'": "#31aabd",
-  "'Learning Game'": "#00274e",
-  "'Boss Battle'": "#876f94",
+  "'Learning Game Reviews'": "#00274e",
+  "'Boss Battles'": "#876f94",
   "end": "#000013",
 
 
@@ -106,7 +106,7 @@ var arc = d3.arc()
 
 // Use d3.text and d3.csvParseRows so that we do not need to have a header
 // row, and can receive the csv as an array of arrays.
-d3.text("https://supervanya.github.io/grades_plot/folder/visit-sequences.csv", function(text) {
+d3.text("https://supervanya.github.io/Projects/EDUC333/sub/visit-sequences.csv", function(text) {
   var csv = d3.csvParseRows(text);
   var json = buildHierarchy(csv);
   createVisualization(json);
