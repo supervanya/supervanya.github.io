@@ -6,7 +6,7 @@
 .flex-container {
   display: flex;
   justify-content: center;
-  background-color: DodgerBlue;
+  background-color: #002c60;
 
 
 }
@@ -25,12 +25,12 @@ p {
 
 .flex-container > div {
   background-color: #fff;
-  width: 800px;
+  width: 100%;
   margin: 10px;
   text-align: center;
   font-size: 17px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 
 }
 </style>
@@ -39,20 +39,22 @@ p {
 <h1>Michigan Fitness Association (MFA) | Calendar</h1>
 <p>This is a calendar of training/events in sister-organizations within MFA:</p>
 
-<div class="flex-container">
-    <div style="width: 60%; ">
-      <iframe src="https://calendar.google.com/calendar/embed?title=%20&amp;showDate=0&amp;showPrint=0&amp;showTabs=1&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%2333ccff&amp;src=umich.edu_neejulc4prm4qvd2g2eer31604%40group.calendar.google.com&amp;color=%23711616&amp;ctz=America%2FNew_York" style="border-width:0" width=100% height=800px frameborder="0" scrolling="no"></iframe>
+<div class="flex-container" style="height: 80%;">
+    <div style="width: 70%; min-width: 400px; ">
+      <iframe src="https://calendar.google.com/calendar/embed?title=%20&amp;showDate=0&amp;showPrint=0&amp;showTabs=1&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%2333ccff&amp;src=umich.edu_neejulc4prm4qvd2g2eer31604%40group.calendar.google.com&amp;color=%23711616&amp;ctz=America%2FNew_York" style="border-width:0" width=100% height=1000px frameborder="0" scrolling="no"></iframe>
     </div>
 
-    <div style="width: 30%; ">
-      <script>(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src='https://embed.playbuzz.com/sdk.js';fjs.parentNode.insertBefore(js,fjs);}(document,'script','playbuzz-sdk'));</script>
-    <div class="playbuzz" data-id="74b5bd05-dfc8-44a1-b7f6-09eff030acd0" data-show-info="false"></div>
+    <div style="width: 30%; height: 1000px; min-width: 400px; ">
+        <script>(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src='https://embed.playbuzz.com/sdk.js';fjs.parentNode.insertBefore(js,fjs);}(document,'script','playbuzz-sdk'));
+        </script>
+        <div class="playbuzz" data-id="74b5bd05-dfc8-44a1-b7f6-09eff030acd0" data-show-share="false" data-show-info="false"></div>
     </div>
-  <div style="width: 10%; ">
-    <p>Please feel free to join any of the events, add them to your calendar and bring your friends!<br><br>We welcome students of all levels and skills, as long as you are passionate - we've got the rest!</p>
-  </div>
+
 </div>
 
+  <div style="width: 100%; ">
+    <p>Please feel free to join any of the events, add them to your calendar and bring your friends!<br>We welcome students of all levels and skills, as long as you are passionate - we've got the rest!</p>
+  </div>
 
 </body>
 </html>
