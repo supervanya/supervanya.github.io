@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="https://get.mavo.io/mavo.js"></script>
+  <link rel="stylesheet" href="https://get.mavo.io/mavo.css">
 <style>
 
 .flex-container {
@@ -39,12 +41,15 @@ p {
 <h1>Michigan Fitness Association (MFA) | Calendar</h1>
 <p>This is a calendar of training/events in sister-organizations within MFA:</p>
 
+
+
+
 <div class="flex-container" style="height: 80%;">
     <div style="width: 70%; min-width: 400px; ">
       <iframe src="https://calendar.google.com/calendar/embed?title=%20&amp;showDate=0&amp;showPrint=0&amp;showTabs=1&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%2333ccff&amp;src=umich.edu_neejulc4prm4qvd2g2eer31604%40group.calendar.google.com&amp;color=%23711616&amp;ctz=America%2FNew_York" style="border-width:0" width=100% height=1000px frameborder="0" scrolling="no"></iframe>
     </div>
 
-    <div style="width: 30%; height: 1000px; min-width: 400px; ">
+    <div style="width: 400px; height: 1000px; ">
         <script>(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src='https://embed.playbuzz.com/sdk.js';fjs.parentNode.insertBefore(js,fjs);}(document,'script','playbuzz-sdk'));
         </script>
         <div class="playbuzz" data-id="74b5bd05-dfc8-44a1-b7f6-09eff030acd0" data-show-share="false" data-show-info="false"></div>
@@ -55,6 +60,17 @@ p {
   <div style="width: 100%; ">
     <p>Please feel free to join any of the events, add them to your calendar and bring your friends!<br>We welcome students of all levels and skills, as long as you are passionate - we've got the rest!</p>
   </div>
+
+<div mv-app="nameDemo" mv-storage="local" style="width: 30%; min-width: 400px; ">
+    Name:
+    <span property="firstName">Lea</span>
+    <span property="last_name">Verou</span>
+    <p>Here is a scratch pad, add some interesting clubs here:</p>
+<ul>
+    <li property="club" mv-multiple>Michigan Muscle Club</li>
+</ul>
+</div>
+
 
 </body>
 </html>
