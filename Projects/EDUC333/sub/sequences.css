@@ -3,15 +3,14 @@ body {
   font-size: 12px;
   font-weight: 400;
   background-color: #fff;
-  width: 50%;
+  width: 960px;
   height: 700px;
   margin-top: 10px;
-  margin: auto;
 }
 
 #main {
   float: left;
-  width: 80%;
+  width: 750px;
 }
 
 #sidebar {
