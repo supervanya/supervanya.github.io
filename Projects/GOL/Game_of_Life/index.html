@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        Game of Life
+    </title>
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- Custom JavaScript and CSS -->
+    <script type="text/javascript" src="gol.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="header">
+        <h1>Game of Life</h1>
+    </div>
+    <div id="content">
+        <div id="canvas-container"></div>
+        <div id="button-container">
+
+          <div id="buttons">
+              <button id="still-life-btn">Draw Stillife</button>
+              <button id="oscillator-btn">Draw Oscillator</button>
+              <button id="spaceship-btn">Draw Spaceship</button>
+          </div>
+            <form>
+                <select id="still-life-select">
+                    <option value="Block" selected>Block</option>
+                    <option value="Beehive">Beehive</option>
+                    <option value="Loaf">Loaf</option>
+                    <option value="Boat">Boat</option>
+                </select>
+            </form>
+            <form>
+                <select id="oscillator-select">
+                    <option value="Blinker" selected>Blinker</option>
+                    <option value="Toad">Toad</option>
+                    <option value="Beacon">Beacon</option>
+                    <option value="Pulsar">Pulsar</option>
+                </select>
+            </form>
+            <form>
+                <select id="spaceship-select">
+                    <option value="Glider" selected>Glider</option>
+                    <option value="Lwss">Lwss</option>
+                </select>
+            </form>
+            <div id="gameplay">
+                <button id="clearBoard-btn">Clear Board</button>
+                <button id="start-game">Start</button>
+                <button id="stop-game">Stop</button>
+                <button id="slow-down">Slower</button>
+                <button id="speed-up">Faster</button>
+            </div>
+            <div id="ui">
+                <button id="color-black">Change color to Black</button>
+                <button id="color-blue">Change color to Blue</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
