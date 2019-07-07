@@ -1,53 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Vanya">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="https://abilityoptions.org.au/AOWeb/media/Web-Images/PDF/Valentines-Day-1200x627.jpg?ext=.jpg" />
+    <meta property="og:image"
+        content="https://abilityoptions.org.au/AOWeb/media/Web-Images/PDF/Valentines-Day-1200x627.jpg?ext=.jpg" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://jeethi.com" />
     <meta property="og:title" content="Happy Valentines's Day" />
     <meta property="og:description" content="You are nothing but a wonderful bambi in my wornderland!" />
-    
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
 
-    
+
     <title>Jeethi's Page</title>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Lato');
 
         body {
             margin-top: 10vh;
+            margin-bottom: 10vh;
             text-align: center;
             font-family: 'Lato', 'Roboto', sans-serif;
         }
-        
+
         p {
             line-height: 5px;
+            /* margin-top: 2px; */
+        }
+
+        .container {
+            margin-top: 50px;
+            /* margin-bottom: 20px; */
         }
     </style>
 </head>
+
 <body>
+    <div class="container" id="time">
+        <h2>Hello Jeethi, today is:</h2>
+        <h3 id="currentDate"></h3>
+
+        Here is your local time by the way:
+        <p id="localTimezone"></p>
+
+        <h3>Some other places:</h3>
+        Michigan: <p id="localTimeMichigan"></p>
+        Turkey, Istanbul: <p id="localTimeIstanbul"></p>
+        Egypt, Cairo: <p id="localTimeCairo"></p>
+    </div>
 
     <div class="container">
-	    <img class="u-max-full-width" src="images/OK2.png">
+        <img class="u-max-full-width" src="images/OK2.png">
         <div class="container">
-	         <ul>
-	            <li>Get all 3 stars [5/6 worlds]</li>
-	            <li>Unlock all Kevin Levels</li>
-	            <li>Beat the game to try all 4 stars</li>
-	            <li>Try all expansions (Get piglet!)</li>
-	            <li>. . .</li>
-	        </ul>
-	    </div>
-	</div>
-   
-   
-   
-    <div class="container" >
-        <h2>Dear Jeethi 😋 </h2>
+            <ul>
+                <li>Get all 3 stars [5/6 worlds]</li>
+                <li>Unlock all Kevin Levels</li>
+                <li>Beat the game to try all 4 stars</li>
+                <li>Try all expansions (Get piglet!)</li>
+                <li>. . .</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Dear Jeethi 😋</h2>
 
         <p>Hey, I’m really sorry </p>
         <p>But you needn’t worry </p>
@@ -71,5 +91,54 @@
         <p>🥰 Vanya 2019 😘</p>
         <p>(Happy V day)</p>
     </div>
+
+
+
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+<script src="https://momentjs.com/downloads/moment-timezone-with-data.js"></script>
+
+<script>
+    function getLocalTime() {
+        var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
+            'November', 'December'
+        ];
+
+        var today = new Date();
+
+        var day = today.getDate();
+        var year = today.getFullYear();
+        var dayWeek = days[today.getDay()];
+        var month = months[today.getMonth()];
+        var hr = today.getHours();
+        var min = today.getMinutes();
+        var sec = today.getSeconds();
+
+        // var currentDate = `Today is <strong>${dayWeek}, ${month} ${day} ${year}</strong>`;
+        var currentTime = moment().format("dddd, MMMM Do YYYY");
+        var currentDate = moment().format("h:mm:ss a");
+        var currentTimeMichigan = moment().tz("America/New_York").format("h:mm:ss a");
+        var currentTimeIstanbul = moment().tz("Europe/Istanbul").format("h:mm:ss a");
+        var currentTimeCairo = moment().tz("Africa/Cairo").format("h:mm:ss a");
+
+        var currentDateTag = document.getElementById('currentDate');
+        var currentTimeTag = document.getElementById('localTimezone');
+        var timeMichiganTag = document.getElementById('localTimeMichigan');
+        var timeIstanbulTag = document.getElementById('localTimeIstanbul');
+        var timeCairoTag = document.getElementById('localTimeCairo');
+
+        currentDateTag.innerHTML = currentTime;
+        // currentTimeTag.innerHTML = today.toLocaleString();
+        currentTimeTag.innerHTML = currentDate;
+        timeMichiganTag.innerHTML = currentTimeMichigan;
+        timeIstanbulTag.innerHTML = currentTimeIstanbul;
+        timeCairoTag.innerHTML = currentTimeCairo;
+    }
+    var t = setInterval(getLocalTime, 1000);
+</script>
+
+
+
 </html>
