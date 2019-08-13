@@ -51,6 +51,7 @@
         Michigan: <p id="localTimeMichigan"></p>
         Turkey, Istanbul: <p id="localTimeIstanbul"></p>
         Egypt, Cairo: <p id="localTimeCairo"></p>
+        Singapore: <p id="localTimeSingapore"></p>
     </div>
 
     <div class="container">
@@ -123,12 +124,15 @@
         var currentTimeMichigan = moment().tz("America/New_York").format("h:mm:ss a");
         var currentTimeIstanbul = moment().tz("Europe/Istanbul").format("h:mm:ss a");
         var currentTimeCairo = moment().tz("Africa/Cairo").format("h:mm:ss a");
+        var currentTimeSingapore = moment().tz("Asia/Singapore").format("h:mm:ss a");
+
 
         var currentDateTag = document.getElementById('currentDate');
         var currentTimeTag = document.getElementById('localTimezone');
         var timeMichiganTag = document.getElementById('localTimeMichigan');
         var timeIstanbulTag = document.getElementById('localTimeIstanbul');
         var timeCairoTag = document.getElementById('localTimeCairo');
+        var timeSingaporeTag = document.getElementById('localTimeSingapore');
 
         currentDateTag.innerHTML = currentTime;
         // currentTimeTag.innerHTML = today.toLocaleString();
@@ -136,6 +140,7 @@
         timeMichiganTag.innerHTML = currentTimeMichigan;
         timeIstanbulTag.innerHTML = currentTimeIstanbul;
         timeCairoTag.innerHTML = currentTimeCairo;
+        timeSingaporeTag.innerHTML = currentTimeSingapore;
     }
     var t = setInterval(getLocalTime, 1000);
 </script>
