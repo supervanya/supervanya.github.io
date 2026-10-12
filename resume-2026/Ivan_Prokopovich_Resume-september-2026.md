@@ -19,12 +19,12 @@ Outside of tech, you'll probably find me teaching parkour or climbing mountains.
 ## Skills
 
 - **Languages:** TypeScript, JavaScript, Python, SQL, HTML/CSS
-- **Front end:** React, Vue, Angular, Storybook, Atomic Design, responsive + accessible UI
-- **Back end:** NestJS, GraphQL, REST, Django, Flask, PostgreSQL
-- **Engineering practice:** monorepos + CI/CD, feature flags, visual regression testing, code review, agentic coding tools
-- **Data:** Jupyter, Pandas, NumPy, D3, Altair/Vega, R, Tableau
+- **Front end:** React, Apollo Client, MUI, Framer Motion, Vue, Angular, Storybook, Atomic Design, responsive + accessible UI
+- **Back end:** NestJS, GraphQL, Hasura, REST, Django, Flask, PostgreSQL (OLTP + OLAP, read replicas)
+- **Engineering practice:** monorepos + CI/CD, feature flags, visual regression testing, code review, design docs, agentic coding tools
+- **Data:** Jupyter, Pandas, NumPy, Metabase, Observable, D3, Altair/Vega, R, Tableau
 - **Design:** Figma, prototyping, UX research, Photoshop, Illustrator, After Effects, InDesign
-- **Leadership:** hiring, mentoring, performance development, team culture + well-being
+- **Leadership:** hiring, onboarding, mentoring, performance reviews, team culture + well-being
 
 ---
 
@@ -34,32 +34,41 @@ Outside of tech, you'll probably find me teaching parkour or climbing mountains.
 
 B2B SaaS for physical security risk assessment · Ann Arbor, MI → San Francisco, CA · _May 2019 – Present_
 
-Joined as an intern, went full-time a year later, and grew from Software Engineer I to Co-Director of Engineering.
+Joined as an intern, went full-time a year later, and grew from Software Engineer I to Co-Director of Engineering and Product.
 
-#### Co-Director of Engineering · _March 2024 – Present_
+#### Co-Director of Engineering and Product · _March 2024 – Present_
 
 Shaped the engineering team's direction and culture while staying closely involved in product and technical decisions.
 
-- Partnered across Engineering, Product, Design, Client Success, and Operations to turn ambiguous customer problems into shipped products, including a fully customizable BI dashboard
+- Owned our customer-facing business intelligence initiative: a fully customizable BI dashboard in React, backed by read replicas and a new OLAP layer (we'd only had OLTP before)
+- Owned in-house business intelligence on Metabase (something I'd been maintaining since 2023), with dashboards and reports the whole team used
 - Cut our CI/CD bill by 80% with monorepo task caching, dependency cleanup, and parallelized execution
 - Drove adoption of agentic coding through an internal tooling harness
+- Partnered across Engineering, Product, Design, Client Success, and Operations to turn ambiguous customer problems into shipped products
 - Developed a CTO hiring framework; interviewed and hired
-- Led hiring, onboarding, mentoring, and performance development for the engineering team, aiming for high productivity and a strong work-life-health balance (that's right, health is one of my top priorities)
-- Worked with leadership on the product roadmap; ran internal demos, retros, and knowledge sharing (Dev Dives, Hackathons)
-- Kept codebase best practices alive and pushed for continuous process improvement
+- Rebuilt onboarding and overhauled the performance review process, including 90-day reviews for new hires
+- Led hiring, mentoring, and 1:1s with every engineer, aiming for high productivity and a strong work-life-health balance (that's right, health is one of my top priorities)
+- Worked with leadership on the product roadmap and ran a recurring Dev ↔ Exec meeting; led company and engineering retros, internal demos, and knowledge sharing (Dev Dives, Hackathons)
+- Owned our Engineering Manual, keeping codebase best practices documented and pushing for continuous process improvement
 
 #### Senior Product Engineer + Chief of Culture & Wellbeing · _May 2023 – May 2025_
 
 Worked where engineering, product, and design meet: taking ideas from early prototypes and UX research all the way to production, while running the team's health initiatives.
 
 - Owned large product initiatives: broke ambiguous problems into deliverable work, coordinated engineers, and prototyped with Product and customers before committing to full-scale development
+- Planned, designed, and built the Assessor Quick Start project, and worked with Design and Engineering to bring a new Tasks experience to the app
 - Built full-stack, data-rich interfaces with React, TypeScript, GraphQL, NestJS, and Postgres
 - Designed and built Inherent Risk dashboards and assessment tools, turning manual, outdated enterprise processes into intuitive workflows for security executives
 - Kept browser workloads light by moving expensive computation server-side, and supported offline-first workflows with persistent local storage for users in secure, low-connectivity environments
 - Was the engineering team's main advocate for UX quality: interaction design, visual polish, accessibility, and responsive behavior across screen sizes, touch and pointer input, power-user workflows, and AI-assisted summarization
 - Partnered with Design to move component work to Atomic Design, with Storybook-driven development and visual regression testing
+- Redesigned the default Layer Details and Hierarchy page layouts with Design, and updated our theme in Figma and code to match the latest MUI
+- Helped the team get a handle on our complex forms system and documented it in our Frontend Best Practices
+- Mentored a teammate learning TypeScript and React
 - Partnered with Customer Success to ship an in-product knowledge base, an AI assistant, and feature-flagging infrastructure for product experiments
-- Led culture and well-being experiments: a weekly Culture Pulse survey (OfficeVibe), company wellness challenges from one week to four months long, and the traditions of Wellness Wednesdays, Thursday Happy Hour, and quarterly Wellness Challenges
+- Led culture and well-being experiments: a weekly Culture Pulse survey (OfficeVibe), company wellness challenges from one week to four months long (one tracked in a live Observable notebook), and the traditions of Wellness Wednesdays, Thursday Happy Hour, and quarterly Wellness Challenges
+- Led the rollout of our company OKR framework and tracking, and got Culture Success approved as its own OKR team
+- Helped plan the company retreat, ran retros for the Makers team, and helped rework our weekly Wednesdays in Progress meeting to be more relevant and efficient
 
 #### Product Engineer III · _December 2022 – May 2023_
 
@@ -69,16 +78,24 @@ Promoted to lead early-stage product work: rapid prototyping and UX research wit
 
 Built and shipped full-stack product features while taking on more ownership of UX, product decisions, and engineering practices.
 
+- Led Inherent Risk Trend Analysis, one of my biggest projects: planned it with our Director of Product and CTO and broke it into small, deliverable pieces
+- Worked with our designer on component library, bridging Dev and Design
+- Brought more life and polish to the app with Framer Motion animations
+- Pitched in beyond dev with marketing material for conferences and the exec team
+
 #### Software Engineer I · _May 2020 – May 2021_
 
-Continuing my internship full-time!
+Continuing my internship full-time! Grew from a frontend-only intern into a full-stack engineer with a frontend specialty.
+
+- Architected Report Generator end to end: planned and built a NestJS back end to generate .docx and .pdf reports summarizing large assessments
+- Moved API client calls to GraphQL (Hasura + Apollo Client) and got deep into Postgres: views, aggregate queries, triggers, and custom functions
 
 #### Software Engineer Intern · _May 2019 – May 2020_
 
 Full-stack and iOS (React) development, data analysis.
 
 - Worked closely with the CTO to design and ship features for the online portal and iOS app
-- Built a React wizard that walks clients through setting up their organization hierarchy (over 10x faster than before)
+- Built a React wizard that walks clients through setting up their organization hierarchy (over 10x faster location import than before)
 - Wrote a Python analysis of 20 years of FBI crime data to recommend how clients could improve the physical security of their sites
 
 ### Desai Accelerator — Software Engineering Intern
@@ -161,8 +178,4 @@ Promo shoots, including Duo Security's "Decipher" cybersecurity awareness teaser
 
 **Languages:** English (professional), Russian & Belarusian (native), German (limited working), Polish & Ukrainian (elementary)
 
-**Certifications:** Certified Parkour Instructor · Duolingo English Test: Expert
-
-**Publications:** CERN Gathering for Open Science Hardware (2016)
-
-**Links:** supervanya.com · github.com/supervanya · linkedin.com/in/supervanya · oneoPk.tumblr.com (blog)
+**Links:** supervanya.com · github.com/supervanya · linkedin.com/in/supervanya
