@@ -10,9 +10,9 @@ Ann Arbor, MI · ivan.d.prokopovich@gmail.com · linkedin.com/in/supervanya · g
 
 I'm a software engineer with a designer's touch and a passion for making complex things feel simple. For the past decade, I've been building data-rich enterprise products for Fortune 500 clients, turning complicated workflows into fast, intuitive experiences that people genuinely enjoy using.
 
-I've built products across the stack, led engineering teams, and founded a venture focused on workplace well-being. My background spans design, education, and information, and I care as much about the people building software as the people using it. I'm especially passionate about hands-on product engineering for education and well-being technology.
+I've built products across the stack, led engineering teams, and founded a venture focused on workplace well-being. My background is in design, information studies, and education. I care as much about the people building software as the people using it, and I'm especially passionate about hands-on product engineering for education and well-being technology.
 
-Outside of tech, you'll probably find me teaching parkour or climbing mountains.
+Outside of tech, you'll probably find me teaching parkour or climbing mountains. Please reach out if you are researching or working on a product to improve education, public health, or fitness and could use my help!
 
 ---
 
