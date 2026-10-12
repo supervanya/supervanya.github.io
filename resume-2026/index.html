@@ -252,6 +252,10 @@
       .title { font-size: 20px; }
       .main { order: -1; }               /* experience + education first */
       .section-title { font-size: 40px; }
+      /* "i do" groups: two columns, one when a column would be under 150px */
+      .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(max(150px, 40%), 1fr)); gap: 14px 24px; }
+      .skills .section-title { grid-column: 1 / -1; }
+      .skills .group + .group { margin-top: 0; }
       .degree { grid-template-columns: 100px 100px 1fr; }
       .job-head, .school-head, .role-head { flex-wrap: wrap; }
       .bullets { --indent: 28px; --bullet-at: 4px; }
@@ -320,7 +324,7 @@
       <aside class="sidebar">
 
         <!-- I DO -->
-        <section class="section">
+        <section class="section skills">
           <h2 class="section-title">i do</h2>
 
           <div class="group">
