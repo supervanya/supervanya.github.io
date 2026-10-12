@@ -8,27 +8,41 @@
   <meta name="description" content="Resume of Vanya Prokopovich, information designer / developer.">
   <link rel="icon" href="logo.png">
 
-  <!-- Fonts: Jost ≈ Futura (body), Mulish ≈ Museo (headings) -->
+  <!-- Jost (free Futura look-alike) from Google Fonts: every weight 100–900, upright + italic -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,400&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400&display=swap">
-  <link rel="stylesheet" href="./fonts/museo-500.otf">
-  <link rel="stylesheet" href="./fonts/museo-100.otf">
-  <link rel="stylesheet" href="./fonts/FuturaLT-Book.woff">
-  <link rel="stylesheet" href="./fonts/FuturaLT.woff">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap">
+
+  <!-- Museo is self-hosted; start downloading the most-used weight right away -->
+  <link rel="preload" href="fonts/museo-100.woff2" as="font" type="font/woff2" crossorigin>
 
   <style>
     /* ==========================================================
+       0. FONTS — Museo: one family name, one file per weight (Jost comes from Google above)
+       ========================================================== */
+    @font-face { font-family: "Museo";       font-weight: 100; font-style: normal; font-display: swap; src: url("fonts/museo-100.woff2") format("woff2"); }
+    @font-face { font-family: "Museo";       font-weight: 500; font-style: normal; font-display: swap; src: url("fonts/museo-500.woff2") format("woff2"); }
+    /* Avenir ships with macOS/iOS, so it's used from the system instead of a file */
+    @font-face { font-family: "Avenir Book"; font-weight: 400; font-style: italic; src: local("Avenir-BookOblique"), local("Avenir Book Oblique"); }
+
+    /* ==========================================================
        1. SETTINGS — change colors, fonts and sizes here
-      ========================================================== */
+       ========================================================== */
     :root {
       --pink:        #ef4e7a;   /* section titles, rules, links */
       --ink:         #111111;   /* titles, names, labels        */
       --text:        #58595b;   /* regular body text            */
       --muted:       #808183;   /* contact info, job role       */
 
-      --font-body:    "FuturaLT", "Jost", "Futura PT", "Century Gothic", sans-serif;
-      --font-display: "Museo Sans", "Museo", "Avenir Next", sans-serif;
+      --font-body:    "Jost", "Futura", "Century Gothic", sans-serif;
+      --font-display: "Museo", "Avenir Next", "Segoe UI", sans-serif;
+      --font-site:    "Avenir Book", "Avenir Next", "Segoe UI", sans-serif;
+
+      /* Jost weights — any number from 100 to 900 works (e.g. 350) */
+      --weight-body:  400;      /* body text, company names, @supervanya */
+      --weight-label: 450;      /* sidebar titles ("Development")        */
+      --weight-light: 300;      /* job roles, "updated" footer           */
+      --size-body:    16px;
 
       --page-width:   210mm;    /* same size as the original PDF */
       --page-height:  347mm;    /* (also update @page at the bottom) */
@@ -49,7 +63,8 @@
       margin: 0;
       background: #e9e9ea;
       color: var(--text);
-      font: 400 16.5px/1.16 var(--font-body);
+      font: var(--weight-body) var(--size-body)/1.2 var(--font-body);
+      font-synthesis: none;   /* never fake bold/italic */
       -webkit-font-smoothing: antialiased;
     }
 
@@ -86,25 +101,24 @@
       display: block;
       text-align: center;
       color: var(--ink);
-      font: italic 400 18px/1.25 var(--font-display);
+      font: italic 100 18.5px/1.25 var(--font-site);
     }
     .logo img { display: block; width: 100%; height: auto; margin-bottom: 6px; }
     .logo-site { display: inline-block; position: relative; }
     .logo-site u { text-decoration-color: var(--pink); text-underline-offset: 3px; text-decoration-thickness: 1px; }
-    .logo-site .hand { position: absolute; left: 58%; top: 6px; }
+    .logo-site .hand { position: absolute; left: 60%; rotate: 6deg; top: 13px; }
 
     .name {
       color: var(--ink);
-      font: 600 41px/1.1 var(--font-display);
-      letter-spacing: .2px;
+      font: 500 40px/1.1 var(--font-display);
     }
     .title {
       margin: 8px 0 4px;
-      color: var(--text);
-      font: 300 25px/1.2 var(--font-display);
-      letter-spacing: 1.3px;
+      color: #383839;
+      font: 100 24px/1.2 var(--font-display);
+      letter-spacing: 1.2px;
     }
-    .contact { color: var(--muted); font: 300 18.5px/1.4 var(--font-display); }
+    .contact { color: var(--text); font: 100 18.5px/1.4 var(--font-display); }
     .contact li:last-child { font-size: 16px; }
     .contact a:hover { color: var(--pink); }
 
@@ -116,14 +130,13 @@
       margin-bottom: 16px;
       border-bottom: 1.4px solid var(--pink);
       color: var(--pink);
-      font: 200 47px/1 var(--font-display);
-      letter-spacing: .3px;
+      font: 100 47px/1 var(--font-display);
       padding-bottom: 1px;
     }
 
     /* Sidebar group: black title ("Development") + indented items */
     .group + .group { margin-top: 14px; }
-    .group-title { margin-bottom: 4px; color: var(--ink); font-weight: 500; font-size: 18px; }
+    .group-title { margin-bottom: 4px; color: var(--ink); font-weight: var(--weight-label); font-size: 17px; }
     .group ul { padding-left: 19px; }
 
     .ink { color: var(--ink); }
@@ -150,8 +163,8 @@
       align-items: baseline;
       gap: 12px;
     }
-    .job-company { color: var(--ink); font-weight: 400; font-size: inherit; }
-    .job-role { color: var(--muted); font-weight: 300; text-align: right; }
+    .job-company { color: var(--ink); font-weight: var(--weight-body); font-size: inherit; }
+    .job-role { font-weight: var(--weight-light); text-align: right; }
     .job .bullets { margin-top: 10px; }
     .job .bullets li + li { margin-top: 8px; }
 
@@ -189,10 +202,10 @@
       flex-direction: column;
       align-items: center;
       color: var(--pink);
-      font: 400 15px/1.2 var(--font-body);
+      font: var(--weight-body) 16px/1.2 var(--font-body);
     }
     .social svg.mark { width: 62px; height: 62px; fill: var(--pink); margin-bottom: 4px; }
-    .social .hand { position: absolute; left: 50px; top: 30px; }
+    .social .hand { position: absolute; left: 62px; top: 30px; }
     .social a:hover span { text-decoration: underline; }
 
     .footer {
@@ -200,11 +213,11 @@
       padding-top: 12px;
       border-top: 1.4px solid #000;
       color: #333;
-      font: 300 15.5px/1 var(--font-body);
+      font: var(--weight-light) 16px/1 var(--font-body);
       text-align: center;
     }
 
-    .hand { width: 30px; height: 33px; overflow: visible; pointer-events: none; }
+    .hand { width: 30px; height: 33px; overflow: visible; }
 
     /* ==========================================================
        8. SMALL SCREENS — stack everything into one column
@@ -265,8 +278,7 @@
         <h1 class="name">vanya prokopovich</h1>
         <p class="title">information designer / developer</p>
         <ul class="contact">
-          <li><a href="mailto:me@supervanya.com">me@supervanya.com</a></li>
-          <li><a href="tel:+17347077911">734&thinsp;·&thinsp;707&thinsp;·&thinsp;7911</a></li>
+          <li><a href="mailto:ivan.d.prokopovich@gmail.com">ivan.d.prokopovich@gmail.com</a></li>
         </ul>
       </div>
     </header>
@@ -401,8 +413,7 @@
           </article>
         </section>
 
-        <!-- EDUCATION — copy a <div class="school"> block to add a school,
-             or a <div class="degree"> row to add a degree -->
+        <!-- EDUCATION -->
         <section class="section">
           <h2 class="section-title">education</h2>
 
@@ -411,9 +422,9 @@
               <p>University of Michigan, Ann Arbor</p>
               <p>Major GPA: 3.9</p>
             </div>
-            <div class="degree"><p>2019 - 2020</p><p>Information</p><p>Data Analysis</p></div>
-            <div class="degree"><p>2015 - 2019</p><p>Art &amp; Design</p><p>Data Visualization &amp; UX</p></div>
-            <div class="degree minors"><p>Minors:</p><p>Computer Science, Art &amp; Design</p></div>
+            <div class="degree"><p>2019 - 2020</p><p>BSI</p><p>Data Analysis</p></div>
+            <div class="degree"><p>2015 - 2019</p><p>BFA</p><p>Graphic Design &amp; UX</p></div>
+            <div class="degree minors"><p>Minors:</p><p>Computer Science, Entrepreneurship</p></div>
           </div>
         </section>
 
