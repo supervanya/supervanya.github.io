@@ -4,11 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vanya Prokopovich · Resume</title>
-  <meta name="description" content="Resume of Vanya Prokopovich, information designer / developer.">
+  <title>Ivan Prokopovich · Resume</title>
+  <meta name="description" content="Resume of Ivan Prokopovich, full-stack engineer / designer.">
   <link rel="icon" href="logo.png">
 
-  <!-- Jost (free Futura look-alike) from Google Fonts: every weight 100–900, upright + italic -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap">
@@ -17,17 +16,17 @@
   <link rel="preload" href="fonts/museo-100.woff2" as="font" type="font/woff2" crossorigin>
 
   <style>
-    /* ==========================================================
+    /* ----------------------------------------------------------
        0. FONTS — Museo: one family name, one file per weight (Jost comes from Google above)
-       ========================================================== */
+       ---------------------------------------------------------- */
     @font-face { font-family: "Museo";       font-weight: 100; font-style: normal; font-display: swap; src: url("fonts/museo-100.woff2") format("woff2"); }
     @font-face { font-family: "Museo";       font-weight: 500; font-style: normal; font-display: swap; src: url("fonts/museo-500.woff2") format("woff2"); }
     /* Avenir ships with macOS/iOS, so it's used from the system instead of a file */
     @font-face { font-family: "Avenir Book"; font-weight: 400; font-style: italic; src: local("Avenir-BookOblique"), local("Avenir Book Oblique"); }
 
-    /* ==========================================================
+    /* ----------------------------------------------------------
        1. SETTINGS — change colors, fonts and sizes here
-       ========================================================== */
+       ---------------------------------------------------------- */
     :root {
       --pink:        #ef4e7a;   /* section titles, rules, links */
       --ink:         #111111;   /* titles, names, labels        */
@@ -47,14 +46,15 @@
       --page-width:   210mm;    /* same size as the original PDF */
       --page-height:  347mm;    /* (also update @page at the bottom) */
       --page-pad-x:   46px;
-      --page-pad-top: 106px;
-      --sidebar:      220px;    /* width of the left column     */
+      --page-pad-top: 80px;
+      --sidebar:      210px;    /* width of the left column     */
       --gutter:       38px;     /* space between the columns    */
     }
 
-    /* ==========================================================
+
+    /* ----------------------------------------------------------
        2. PAGE
-       ========================================================== */
+       ---------------------------------------------------------- */
     *, *::before, *::after { box-sizing: border-box; }
 
     html { -webkit-text-size-adjust: 100%; }
@@ -69,8 +69,9 @@
     }
 
     a { color: inherit; text-decoration: none; }
+    a:hover { color: var(--pink); }
 
-    h1, h2, h3, p, ul { margin: 0; padding: 0; }
+    h1, h2, h3, h4, p, ul { margin: 0; padding: 0; }
     ul { list-style: none; }
 
     .page {
@@ -83,6 +84,7 @@
       background: #fff;
       box-shadow: 0 1px 3px rgba(0,0,0,.08), 0 8px 30px rgba(0,0,0,.08);
     }
+    .page.continued { padding-top: 44px; }   /* page 2 has no header */
 
     /* Two columns: sidebar on the left, main content on the right */
     .columns {
@@ -92,25 +94,30 @@
     }
     .content { margin-bottom: 18px; }   /* space above the footer */
 
-    /* ==========================================================
+    /* ----------------------------------------------------------
        3. HEADER (logo, name, contact)
-       ========================================================== */
+       ---------------------------------------------------------- */
     .header { align-items: center; margin-bottom: 58px; }
 
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font: italic 100 18.5px/1.25 var(--font-site);
+    }
     .logo {
       display: block;
       text-align: center;
       color: var(--ink);
-      font: italic 100 18.5px/1.25 var(--font-site);
     }
     .logo img { display: block; width: 100%; height: auto; margin-bottom: 6px; }
     .logo-site { display: inline-block; position: relative; }
     .logo-site u { text-decoration-color: var(--pink); text-underline-offset: 3px; text-decoration-thickness: 1px; }
-    .logo-site .hand { position: absolute; left: 60%; rotate: 6deg; top: 13px; }
+    .logo-site .hand { position: absolute; left: 96%; rotate: 6deg; top: 14px; }
 
     .name {
       color: var(--ink);
-      font: 500 40px/1.1 var(--font-display);
+      font: 500 35px/1.1 var(--font-display);
     }
     .title {
       margin: 8px 0 4px;
@@ -118,13 +125,12 @@
       font: 100 24px/1.2 var(--font-display);
       letter-spacing: 1.2px;
     }
-    .contact { color: var(--text); font: 100 18.5px/1.4 var(--font-display); }
-    .contact li:last-child { font-size: 16px; }
-    .contact a:hover { color: var(--pink); }
+    .contact { color: var(--text); font: 100 14.5px/1.4 ; }
+    .intro { margin-top: 14px; }
 
-    /* ==========================================================
+    /* ----------------------------------------------------------
        4. SECTIONS
-       ========================================================== */
+       ---------------------------------------------------------- */
     .section + .section { margin-top: 22px; }
     .section-title {
       margin-bottom: 16px;
@@ -143,7 +149,7 @@
     .muted { color: var(--muted); }
 
     /* » bullet list */
-    .bullets { --indent: 46px; --bullet-at: 10px; }
+    .bullets { --indent: 30px; --bullet-at: 10px; }
     .bullets li { position: relative; padding-left: var(--indent); }
     .bullets li::before {
       content: "»";
@@ -153,9 +159,9 @@
       line-height: 1.6;
     }
 
-    /* ==========================================================
+    /* ----------------------------------------------------------
        5. EXPERIENCE
-       ========================================================== */
+       ---------------------------------------------------------- */
     .job + .job { margin-top: 38px; }
     .job-head {
       display: flex;
@@ -163,14 +169,29 @@
       align-items: baseline;
       gap: 12px;
     }
-    .job-company { color: var(--ink); font-weight: var(--weight-body); font-size: inherit; }
+    .job-company { flex-shrink: 0; color: var(--ink); font-weight: var(--weight-body); font-size: inherit; }
     .job-role { font-weight: var(--weight-light); text-align: right; }
     .job .bullets { margin-top: 10px; }
     .job .bullets li + li { margin-top: 8px; }
 
-    /* ==========================================================
+    /* Several roles at one company: title on the left, dates on the right */
+    .role { margin-top: 20px; }
+    .role-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+    }
+    .role-title { color: var(--ink); font-weight: var(--weight-label); font-size: inherit; }
+    .role-dates { flex-shrink: 0; color: var(--muted); font-weight: var(--weight-light); }
+
+    /* Compact entries without bullets ("beyond code") */
+    .job.compact + .job.compact { margin-top: 18px; }
+    .job.compact > p:last-child { margin-top: 4px; }
+
+    /* ----------------------------------------------------------
        6. EDUCATION
-       ========================================================== */
+       ---------------------------------------------------------- */
     .school + .school { margin-top: 24px; }
     .school-head {
       display: flex;
@@ -187,9 +208,9 @@
     .degree.minors > :first-child { color: var(--muted); }
     .degree.minors > :last-child { grid-column: span 2; color: var(--ink); }
 
-    /* ==========================================================
+    /* ----------------------------------------------------------
        7. GITHUB BADGE + FOOTER
-       ========================================================== */
+       ---------------------------------------------------------- */
     .social {
       display: flex;
       gap: 40px;
@@ -201,12 +222,10 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      color: var(--pink);
-      font: var(--weight-body) 16px/1.2 var(--font-body);
     }
     .social svg.mark { width: 62px; height: 62px; fill: var(--pink); margin-bottom: 4px; }
     .social .hand { position: absolute; left: 62px; top: 30px; }
-    .social a:hover span { text-decoration: underline; }
+    .sidebar .social { margin-top: 40px; padding-left: 0; justify-content: center; }
 
     .footer {
       margin-top: auto;   /* pushes the footer to the bottom of the page */
@@ -219,12 +238,12 @@
 
     .hand { width: 30px; height: 33px; overflow: visible; }
 
-    /* ==========================================================
+    /* ----------------------------------------------------------
        8. SMALL SCREENS — stack everything into one column
-       ========================================================== */
+       ---------------------------------------------------------- */
     @media screen and (max-width: 820px) {
       body { background: #fff; }
-      .page { width: auto; min-height: 0; margin: 0; padding: 32px 16px 20px; box-shadow: none; }
+      .page, .page.continued { width: auto; min-height: 0; margin: 0; padding: 32px 16px 20px; box-shadow: none; }
       .columns { grid-template-columns: 1fr; row-gap: 22px; }
       .header { justify-items: center; text-align: center; margin-bottom: 40px; }
       .logo { width: 190px; }
@@ -233,18 +252,19 @@
       .main { order: -1; }               /* experience + education first */
       .section-title { font-size: 40px; }
       .degree { grid-template-columns: 100px 100px 1fr; }
-      .job-head, .school-head { flex-wrap: wrap; }
+      .job-head, .school-head, .role-head { flex-wrap: wrap; }
       .bullets { --indent: 28px; --bullet-at: 4px; }
       .social { justify-content: center; padding-left: 0; }
     }
 
-    /* ==========================================================
-       9. PRINT / SAVE AS PDF — one page, same size as original
-       ========================================================== */
+    /* ----------------------------------------------------------
+       9. PRINT / SAVE AS PDF — two pages, same size as original
+       ---------------------------------------------------------- */
     @page { size: 210mm 347mm; margin: 0; }
     @media print {
       body { background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-      .page { margin: 0; box-shadow: none; min-height: calc(var(--page-height) - 2mm); }
+      .page { margin: 0; box-shadow: none; min-height: calc(var(--page-height) - 2mm); break-after: page; }
+      .page:last-child { break-after: auto; }
     }
   </style>
 </head>
@@ -260,35 +280,44 @@
     </symbol>
   </svg>
 
-  <main class="page">
+  <main>
 
-    <!-- ======================================================
+  <!------------------------------------------------------------
+       PAGE 1
+      ------------------------------------------------------------>
+  <div class="page">
+
+    <!--------------------------------------------------------------
          HEADER
-         ====================================================== -->
+      -------------------------------------------------------------->
     <header class="header columns">
-      <a class="logo" href="https://supervanya.com">
-        <img src="logo.png" alt="supervanya logo">
-        <span class="logo-site">
-          <u>supervanya.com</u>
-          <svg class="hand" aria-hidden="true"><use href="#hand"/></svg>
-        </span>
-      </a>
-
+      <div class="logo-container">
+        <a class="logo" href="https://supervanya.com">
+          <img src="logo.png" alt="supervanya logo">
+          <span class="logo-site">
+            <u>supervanya.com</u>
+            <svg class="hand" aria-hidden="true"><use href="#hand"/></svg>
+          </span>
+        </a>
+        <a class="linkedin" href="https://www.linkedin.com/in/supervanya">LinkedIn</a>
+      </div>
+        
       <div>
-        <h1 class="name">vanya prokopovich</h1>
-        <p class="title">information designer / developer</p>
+        <h1 class="name">ivan (vanya) prokopovich</h1>
+        <p class="title">full-stack engineer / designer</p>
         <ul class="contact">
           <li><a href="mailto:ivan.d.prokopovich@gmail.com">ivan.d.prokopovich@gmail.com</a></li>
         </ul>
+        <p class="intro">Software engineer with a designer's touch and a passion for making complex things feel simple. Happiest doing hands-on product work for education and well-being tech.</p>
       </div>
     </header>
 
 
     <div class="columns content">
 
-      <!-- ====================================================
+      <!------------------------------------------------------------
            LEFT COLUMN (sidebar) — copy a <div class="group"> to add one
-           ==================================================== -->
+          ------------------------------------------------------------>
       <aside class="sidebar">
 
         <!-- I DO -->
@@ -296,60 +325,58 @@
           <h2 class="section-title">i do</h2>
 
           <div class="group">
-            <h3 class="group-title">Development</h3>
+            <h3 class="group-title">Languages</h3>
             <ul>
-              <li>Python, C++</li>
+              <li>TypeScript, Python</li>
+              <li>C++, SQL</li>
             </ul>
           </div>
 
           <div class="group">
-            <h3 class="group-title">Web</h3>
+            <h3 class="group-title">Front end</h3>
             <ul>
-              <li>React, Vue, Angular</li>
-              <li>Flask, Django, Jinja, SQL</li>
-              <li>+ HTML, CSS, JS</li>
+              <li>React, Vue</li>
+              <li>HTML, CSS, accessibility</li>
+              <li>Playwright, Storybook</li>
+              <li>Visual regression tests</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <h3 class="group-title">Back end</h3>
+            <ul>
+              <li>Node, NestJS, GraphQL, REST, PostgreSQL</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <h3 class="group-title">Engineering practice</h3>
+            <ul>
+              <li>Atomic Design</li>
+              <li>TDD, CI/CD, Monorepos</li>
+              <li>Human First, Claude next</li>
             </ul>
           </div>
 
           <div class="group">
             <h3 class="group-title">Data Analysis + Viz:</h3>
             <ul>
-              <li>Jupyter Lab, Pandas, Numpy</li>
-              <li>D3, Altair, Vega</li>
-              <li>R, Tableau</li>
+              <li>Colab, Jupyter, Pandas</li>
+              <li>D3, R, Tableau</li>
+              <li>Observable</li>
             </ul>
           </div>
 
           <div class="group">
             <h3 class="group-title">Design</h3>
             <ul>
-              <li>Figma, Invision, Sketch</li>
-              <li>Photoshop, Illustrator,</li>
-              <li>After Effects, InDesign</li>
+              <li>UX research, Claude Code</li>
+              <li>Figma, Adobe CS</li>
+              <li>Photoshop, Illustrator</li>
             </ul>
           </div>
 
-          <div class="group">
-            <h3 class="group-title">Additional Skills</h3>
-            <ul>
-              <li>Illustrations</li>
-              <li>Photography</li>
-              <li>Video editing</li>
-              <li>Animation</li>
-              <li>Parkour + Stunts</li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- I LIKE -->
-        <section class="section">
-          <h2 class="section-title">i like</h2>
-          <ul>
-            <li>Web development</li>
-            <li>Data Analysis</li>
-            <li>Data Visualization</li>
-            <li>User Experience</li>
-          </ul>
+          
         </section>
 
         <!-- I SPEAK -->
@@ -364,9 +391,9 @@
           </div>
 
           <div class="group">
-            <h3 class="group-title">Conversational:</h3>
+            <h3 class="group-title">Basic:</h3>
             <ul>
-              <li>German, Ukrainian, Polish</li>
+              <li> German, Polish, Ukrainian</li>
             </ul>
           </div>
         </section>
@@ -374,12 +401,13 @@
       </aside>
 
 
-      <!-- ====================================================
+      <!------------------------------------------------------------
            RIGHT COLUMN (main)
-           ==================================================== -->
+          ------------------------------------------------------------>
       <div class="main">
 
-        <!-- EXPERIENCE — copy an <article class="job"> block to add one -->
+        <!-- EXPERIENCE — copy an <article class="job"> block to add one,
+             or a <div class="role"> to add a role at the same company -->
         <section class="section">
           <h2 class="section-title">experience</h2>
 
@@ -387,29 +415,38 @@
             <p>2019 May - Pres.</p>
             <div class="job-head">
               <h3 class="job-company">Circadian Risk Inc.</h3>
-              <p class="job-role">Software Engineer Intern</p>
+              <p class="job-role">Intern → Co-Director</p>
             </div>
-            <p>Full-stack &amp; iOS (React) Development, Data Analysis</p>
-            <ul class="bullets">
-              <li>Worked closely with CTO to rapidly design and implement features for the online portal and iOS app</li>
-              <li>Created a powerful wizard experience using React that walks clients through creation process of organization hierarchy (increased speed over 10 times)</li>
-              <li>Created a Python script to analyze FBI crime datasets for the past 20 years to make recommendations on how to improve the physical security of clients’ infrastructure</li>
-            </ul>
-          </article>
+            <p>B2B SaaS for physical security risk assessment</p>
 
-          <article class="job">
-            <p>2018 May - Oct</p>
-            <div class="job-head">
-              <h3 class="job-company">Desai Accelerator</h3>
-              <p class="job-role">UX Developer Intern</p>
+            <div class="role">
+              <div class="role-head">
+                <h4 class="role-title">Co-Director of Engineering</h4>
+                <p class="role-dates">2024 Mar - Pres.</p>
+              </div>
+              <ul class="bullets">
+                <li>Cut our CI/CD bill by 80% with monorepo task caching, cleaner dependencies and parallel runs</li>
+                <li>Drove adoption of agentic coding through an internal tooling harness</li>
+                <li>Partnered with Product, Design, Client Success and Ops to turn fuzzy customer problems into shipped products, like a fully customizable BI dashboard</li>
+                <li>Led hiring, mentoring and performance development for the team, and developed our CTO hiring framework</li>
+              </ul>
             </div>
-            <p>Graphic Design, Infographics &amp; Visualizations</p>
-            <ul class="bullets">
-              <li>Developed internal project management system + dashboard to reduce inefficiency in task delegation</li>
-              <li>Developed a fully functioning website with authentication and automated content population via web scraping</li>
-              <li>Worked with founders of 6 startups to create interactive visualizations to deliver a message for a large audience of investors and executives</li>
-              <li>Produced compelling graphic and video material to be used for print and on the web.</li>
-            </ul>
+
+            <div class="role">
+              <div class="role-head">
+                <h4 class="role-title">Senior Product Engineer + Chief of Culture &amp; Wellbeing</h4>
+                <p class="role-dates">2023 May - 2025 May</p>
+              </div>
+              <ul class="bullets">
+                <li>Built full-stack, data-rich features with React, TypeScript, GraphQL, NestJS and Postgres</li>
+                <li>Designed and built Inherent Risk dashboards and assessment tools that replaced manual, outdated processes for security executives</li>
+                <li>Broke large, ambiguous initiatives into deliverable work and prototyped with customers before full builds</li>
+                <li>Moved heavy computation server-side and built offline-first workflows for users in secure, low-connectivity sites</li>
+                <!-- <li>Was the team's main voice for UX quality and accessibility; set up Storybook and visual regression testing with Design</li> -->
+                <!-- <li>Shipped an in-product knowledge base, AI assistant and feature flags with Customer Success</li> -->
+                <!-- <li>Started Wellness Wednesdays and quarterly Wellness Challenges (that's right, health is one of my top priorities)</li> -->
+              </ul>
+            </div>
           </article>
         </section>
 
@@ -422,27 +459,110 @@
               <p>University of Michigan, Ann Arbor</p>
               <p>Major GPA: 3.9</p>
             </div>
-            <div class="degree"><p>2019 - 2020</p><p>BSI</p><p>Data Analysis</p></div>
-            <div class="degree"><p>2015 - 2019</p><p>BFA</p><p>Graphic Design &amp; UX</p></div>
+            <div class="degree"><p>2019 - 2020</p><p>BSI</p><p>Data Analytics</p></div>
+            <div class="degree"><p>2015 - 2019</p><p>BFA</p><p>Graphic Design + HCI</p></div>
             <div class="degree minors"><p>Minors:</p><p>Computer Science, Entrepreneurship</p></div>
           </div>
+
         </section>
 
-        <!-- ======================================================
-             LINKS (add more <a> blocks next to GitHub if you like)
-             ====================================================== -->
-        <nav class="social">
-          <a href="https://github.com/supervanya">
-            <svg class="mark" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-            <svg class="hand" aria-hidden="true"><use href="#hand"/></svg>
-            <span>@supervanya</span>
-          </a>
-        </nav>
 
       </div>
     </div>
 
-    <footer class="footer">updated: 13 Sep 2019</footer>
+
+
+    <footer class="footer">updated: 12 Oct 2026 · 1 / 2</footer>
+
+  </div>
+
+
+  <!------------------------------------------------------------
+       PAGE 2
+       ------------------------------------------------------------>
+  <div class="page continued">
+      <div class="main">
+
+        <!-- BEFORE THAT (earlier experience) -->
+        <section class="section">
+          <h2 class="section-title">experience (continued)</h2>
+
+          <article class="job">
+            <p>2019 May - 2023 May</p>
+            <div class="job-head">
+              <h3 class="job-company">Circadian Risk Inc.</h3>
+              <p class="job-role">Intern → Product Engineer III</p>
+            </div>
+            <p>Continued my internship full-time. As Product Engineer III, led early prototyping and UX research with customers</p>
+            <ul class="bullets">
+              <li>Worked closely with the CTO to design and ship features for the web portal and iOS app</li>
+              <li>Built a React wizard that walks clients through setting up their organization hierarchy (over 10x faster)</li>
+              <li>Wrote a Python analysis of 20 years of FBI crime data to recommend physical security improvements to clients</li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <p>2018 May - 2019 May</p>
+            <div class="job-head">
+              <h3 class="job-company">Desai Accelerator</h3>
+              <p class="job-role">Software Engineering Intern</p>
+            </div>
+            <p>Front-end engineering + data analysis for 6 startups</p>
+            <ul class="bullets">
+              <li>Built an internal project management system + dashboard to cut down on messy task delegation</li>
+              <li>Built a website with authentication and content auto-populated by web scraping</li>
+              <li>Made interactive visualizations, videos and flyers with founders to pitch investors and executives</li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- BEYOND CODE — copy an <article class="job compact"> block to add one -->
+        <section class="section">
+          <h2 class="section-title">beyond code</h2>
+
+          <article class="job compact">
+            <p>2017 Jan - 2019 May</p>
+            <div class="job-head">
+              <h3 class="job-company">wOw Movement LLC</h3>
+              <p class="job-role">Co-Founder &amp; CEO</p>
+            </div>
+            <p>Data analytics for workplace "health": trust, psychological safety and creativity, through on-site workshops built around play</p>
+          </article>
+
+          <article class="job compact">
+            <p>2016 - 2017, 2023 - 2025</p>
+            <div class="job-head">
+              <h3 class="job-company">Parkour Coach</h3>
+              <p class="job-role">SF Rec &amp; Parks, U School, Movement Creative</p>
+            </div>
+            <p>Taught ages 3 to 70. Groups of up to 500. Parkour is a unique discipline and an art that requires teaching using clever psychological tricks, breaking terrifying skills into fun challenges</p>
+          </article>
+
+          <article class="job compact">
+            <p>2013 Jan - 2015 Sep</p>
+            <div class="job-head">
+              <h3 class="job-company">Backyard Brains</h3>
+              <p class="job-role">Designer</p>
+            </div>
+            <p>Product design for DIY neuroscience kits for educators</p>
+          </article>
+        </section>
+
+        
+      </div>
+
+    <nav class="social">
+      <a href="https://github.com/supervanya">
+        <svg class="mark" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        <svg class="hand" aria-hidden="true"><use href="#hand"/></svg>
+        <span>@supervanya</span>
+      </a>
+    </nav>
+
+
+    <footer class="footer">updated: 12 Oct 2026 · 2 / 2</footer>
+
+  </div>
 
   </main>
 </body>

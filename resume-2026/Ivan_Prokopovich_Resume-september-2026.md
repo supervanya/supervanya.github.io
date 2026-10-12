@@ -1,6 +1,8 @@
 # Ivan Prokopovich
 
-San Francisco, CA · ivan.d.prokopovich@gmail.com · LinkedIn: linkedin.com/in/supervanya
+Full-stack developer / designer
+
+Ann Arbor, MI · ivan.d.prokopovich@gmail.com · linkedin.com/in/supervanya · github.com/supervanya · supervanya.com
 
 ---
 
@@ -12,100 +14,146 @@ I've built products across the stack, led engineering teams, and founded a ventu
 
 Outside of tech, you'll probably find me teaching parkour or climbing mountains.
 
-## Outside of tech, you'll probably find me teaching parkour or climbing mountains.
+---
 
-## Core Skills
+## Skills
 
-Software Engineering • Data Analysis & Visualization • Design • Leadership • Organizational Culture
+- **Languages:** TypeScript, JavaScript, Python, SQL, HTML/CSS
+- **Front end:** React, Vue, Angular, Storybook, Atomic Design, responsive + accessible UI
+- **Back end:** NestJS, GraphQL, REST, Django, Flask, PostgreSQL
+- **Engineering practice:** monorepos + CI/CD, feature flags, visual regression testing, code review, agentic coding tools
+- **Data:** Jupyter, Pandas, NumPy, D3, Altair/Vega, R, Tableau
+- **Design:** Figma, prototyping, UX research, Photoshop, Illustrator, After Effects, InDesign
+- **Leadership:** hiring, mentoring, performance development, team culture + well-being
 
 ---
 
-## Work Experience
+## Experience
 
-### Co-Director of Engineering
+### Circadian Risk Inc.
 
-**Circadian Risk Inc.** — San Francisco, CA · _March 2024 – Present_
+B2B SaaS for physical security risk assessment · Ann Arbor, MI → San Francisco, CA · _May 2019 – Present_
 
-Circadian Risk builds software for physical security risk assessment and management. Promoted from Product Engineer to co-lead the engineering organization.
+Joined as an intern, went full-time a year later, and grew from Software Engineer I to Co-Director of Engineering.
 
-- Drive cross-functional collaboration between Engineering, Product, Design, Client Success, and Operations to deliver high-quality, customer-focused applications.
-- Maintain and champion codebase best practices and facilitate continuous process improvement.
-- Lead hiring, onboarding, and performance reviews, with a focus on attracting and retaining diverse, top-tier talent.
-- Partner with executive leadership to shape and deliver the product roadmap; validate new features and facilitate internal product demos and retrospectives.
-- Foster a strong engineering culture through mentoring, knowledge sharing (Dev Dives, Hackathons), and transparent communication.
-- Encourage accountability and support initiatives that enhance team well-being.
+#### Co-Director of Engineering · _March 2024 – Present_
 
-### Product Engineer + Director of Culture & Wellbeing
+Shaped the engineering team's direction and culture while staying closely involved in product and technical decisions.
 
-**Circadian Risk Inc.** — San Francisco, CA · _May 2023 – May 2025_
+- Partnered across Engineering, Product, Design, Client Success, and Operations to turn ambiguous customer problems into shipped products, including a fully customizable BI dashboard
+- Cut our CI/CD bill by 80% with monorepo task caching, dependency cleanup, and parallelized execution
+- Drove adoption of agentic coding through an internal tooling harness
+- Developed a CTO hiring framework; interviewed and hired
+- Led hiring, onboarding, mentoring, and performance development for the engineering team, aiming for high productivity and a strong work-life-health balance (that's right, health is one of my top priorities)
+- Worked with leadership on the product roadmap; ran internal demos, retros, and knowledge sharing (Dev Dives, Hackathons)
+- Kept codebase best practices alive and pushed for continuous process improvement
 
-- Built product features end-to-end while leading company-wide culture and wellbeing programs.
-- Ran recurring feedback loops, events, and team rituals to keep a distributed team engaged and healthy.
+#### Senior Product Engineer + Chief of Culture & Wellbeing · _May 2023 – May 2025_
 
-### Software Engineer Intern → Software Engineer → Software Engineer II → Product Engineer III
+Worked where engineering, product, and design meet: taking ideas from early prototypes and UX research all the way to production, while running the team's health initiatives.
 
-**Circadian Risk Inc.** — Ann Arbor, MI / San Francisco, CA · _May 2019 – May 2023_
+- Owned large product initiatives: broke ambiguous problems into deliverable work, coordinated engineers, and prototyped with Product and customers before committing to full-scale development
+- Built full-stack, data-rich interfaces with React, TypeScript, GraphQL, NestJS, and Postgres
+- Designed and built Inherent Risk dashboards and assessment tools, turning manual, outdated enterprise processes into intuitive workflows for security executives
+- Kept browser workloads light by moving expensive computation server-side, and supported offline-first workflows with persistent local storage for users in secure, low-connectivity environments
+- Was the engineering team's main advocate for UX quality: interaction design, visual polish, accessibility, and responsive behavior across screen sizes, touch and pointer input, power-user workflows, and AI-assisted summarization
+- Partnered with Design to move component work to Atomic Design, with Storybook-driven development and visual regression testing
+- Partnered with Customer Success to ship an in-product knowledge base, an AI assistant, and feature-flagging infrastructure for product experiments
+- Led culture and well-being experiments: a weekly Culture Pulse survey (OfficeVibe), company wellness challenges from one week to four months long, and the traditions of Wellness Wednesdays, Thursday Happy Hour, and quarterly Wellness Challenges
 
-Joined as an intern, continued full-time, and was promoted three times to Product Engineer III.
+#### Product Engineer III · _December 2022 – May 2023_
 
-- Built full-stack features across a React/TypeScript front end, NestJS services, and GraphQL APIs.
-- As Product Engineer III, contributed at the earliest stages of development through rapid prototyping and UX research, while planning for full production implementation.
-- Championed culture and wellness initiatives: turned the weekly Culture Pulse survey into an engaging experience using OfficeVibe.
-- Led multiple company wellness challenges ranging from one week to four months, and started the company traditions of Wellness Wednesdays and Thursday Happy Hour.
+Promoted to lead early-stage product work: rapid prototyping and UX research with customers to validate ideas before committing them to full development.
 
-### Co-Founder & CEO
+#### Software Engineer II · _May 2021 – December 2022_
 
-**wOw Movement LLC** — Ann Arbor, MI · _January 2017 – May 2019_
+Built and shipped full-stack product features while taking on more ownership of UX, product decisions, and engineering practices.
 
-wOw Movement was a data analytics company that quantified "health" in workplaces through metrics of trust, psychological safety, and creativity.
+#### Software Engineer I · _May 2020 – May 2021_
 
-- Identified weak links in company culture and delivered actionable steps for employers and managers.
-- Designed and offered on-site workshop packages to improve organizational well-being through play.
+Continuing my internship full-time!
 
-### Information Architect Intern
+#### Software Engineer Intern · _May 2019 – May 2020_
 
-**Desai Accelerator** — Ann Arbor, MI · _May 2018 – May 2019_
+Full-stack and iOS (React) development, data analysis.
 
-Startup accelerator supporting early-stage ventures.
+- Worked closely with the CTO to design and ship features for the online portal and iOS app
+- Built a React wizard that walks clients through setting up their organization hierarchy (over 10x faster than before)
+- Wrote a Python analysis of 20 years of FBI crime data to recommend how clients could improve the physical security of their sites
 
-- Worked in an extremely fast-paced environment where six startups submitted dozens of projects a week for the intern team to complete.
-- Specialized in information design, presenting ideas and data through interactive infographics, websites, videos, and flyers.
+### Desai Accelerator — Software Engineering Intern
 
-### Parkour Coach & Instructor
+Ann Arbor, MI · _May 2018 – May 2019_
 
-**San Francisco Recreation & Parks Department** — San Francisco, CA · _November 2023 – Present_
-**The U School** — Ann Arbor, MI · _August 2016 – October 2017_
-**The Movement Creative** — New York, NY · _May 2016 – August 2016_
+A fast-paced environment where six startups sent dozens of projects a week to our intern team. My niche was front-end engineering and data analysis: helping founders present their ideas through interactive infographics, websites, videos, and flyers.
 
-- Created and facilitated play-based movement curriculum for students ages 3 to 30.
-- Broke complex movements into series of smaller challenges and drills; used games to build coordination and safe-falling skills.
-- Worked one-on-one with students to address mental blocks and fears around difficult skills.
-- Helped design and manufacture a modular parkour playground used at community events open to the public.
+- Built an internal project management system + dashboard to cut down on messy task delegation
+- Built a full website with authentication and content auto-populated through web scraping
+- Made interactive visualizations with founders of 6 startups for pitches to investors and executives
 
-### Stunt Performer
+### wOw Movement LLC — Co-Founder & CEO
 
-**Duo Security** & **Ascape Audio** — Ann Arbor & Detroit, MI · _2018_
+Ann Arbor, MI · _January 2017 – May 2019_
 
-- Performed in promotional video shoots, including Duo Security's "Decipher" cybersecurity awareness teaser.
+A data analytics company that quantified "health" in workplaces through metrics of trust, psychological safety, and creativity.
 
-### Soldering, Assembly & Tool Design → Designer
+- Spotted the weak links in a company's culture and delivered actionable steps for employers and managers
+- Designed on-site workshop packages to improve team well-being through play
 
-**Backyard Brains** — Ann Arbor, MI · _January 2013 – September 2015_
+### Backyard Brains
+
+Ann Arbor, MI · _January 2013 – September 2015_
 
 DIY educational neuroscience startup.
 
-- Product, graphic, and packaging design; video and animation.
-- Assembled production units and designed tooling for the manufacturing process.
+- **Designer** (May 2014 – September 2015): product, graphic, and packaging design; video and animation
+- **Soldering / Assembly / Tool Design** (January 2013 – May 2014): assembled production units and designed tooling
+
+---
+
+## Teaching
+
+### Parkour Coach — San Francisco Recreation & Parks Department
+
+San Francisco, CA · _November 2023 – October 2025_
+
+Led free outdoor workshops, corporate well-being retreats, and structured classes for the city. Groups ranged from 15 adults to as many as 500 kids, which took plenty of creativity to design obstacle courses and skill stations that were engaging, safe, and scalable.
+
+### Parkour Facilitator — The U School
+
+Ann Arbor, MI · _August 2016 – October 2017_
+
+Created and ran a play curriculum for kids ages 3–5 at a new-model preschool, focused on coordination and falling. Also helped design and build a modular parkour playground used at community events open to anyone in the city.
+
+### Parkour Instructor — The Movement Creative
+
+New York, NY · _May 2016 – August 2016_
+
+Taught students ages 7 to 30. Broke complex movements into smaller challenges, drills, and games, and worked one-on-one with students on mental blocks and fears around harder skills.
+
+---
+
+## Other
+
+### Stunt Performer — Duo Security & Ascape Audio
+
+Ann Arbor & Detroit, MI · _2018_
+
+Promo shoots, including Duo Security's "Decipher" cybersecurity awareness teaser and a multi-day shoot for Ascape's headphones.
 
 ---
 
 ## Education
 
-**BS in Information, Data Science / Data Visualization, University of Michigan School of Information**
+**University of Michigan, Ann Arbor** · Major GPA 3.9
 
-**BFA in Data Visualization / Visual Design / UX Design, University of Michigan**
+- BS in Information (BSI), Data Analytics · School of Information · 2019 – 2020
+- BFA, Graphic Design + Human-Computer Interaction (UX/UI) · 2015 – 2019
+- Minors: Computer Science, Entrepreneurship
 
-**AA in Graphic Design, Washtenaw Community College**
+**Washtenaw Community College** · AA, Graphic Design · 2011 – 2012
+
+**Belarusian State Technological University** · Architectural Design (unfinished) · 2010 – 2012
 
 ---
 
@@ -113,6 +161,8 @@ DIY educational neuroscience startup.
 
 **Languages:** English (professional), Russian & Belarusian (native), German (limited working), Polish & Ukrainian (elementary)
 
-**Certifications:** Certified Parkour Instructor · Duolingo English Proficiency: Expert
+**Certifications:** Certified Parkour Instructor · Duolingo English Test: Expert
 
 **Publications:** CERN Gathering for Open Science Hardware (2016)
+
+**Links:** supervanya.com · github.com/supervanya · linkedin.com/in/supervanya · oneoPk.tumblr.com (blog)
