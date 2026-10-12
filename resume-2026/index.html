@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vanya Prokopovich · Resume</title>
+  <meta name="description" content="Resume of Vanya Prokopovich, Information Architect.">
+  <link rel="icon" href="logo.png">
+
+  <!-- Fonts: Jost ≈ Futura (body), Mulish ≈ Museo (headings) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,400&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400&display=swap">
+
+  <style>
+    /* ==========================================================
+       1. SETTINGS — change colors, fonts and sizes here
+       ========================================================== */
+    :root {
+      --pink:        #ef4e7a;   /* section titles, rules, links */
+      --ink:         #111111;   /* titles, names, labels        */
+      --text:        #58595b;   /* regular body text            */
+      --muted:       #8d8e90;   /* contact info, job role       */
+
+      --font-body:    "Jost", "Futura", "Futura PT", "Century Gothic", sans-serif;
+      --font-display: "Mulish", "Museo Sans", "Museo", "Avenir Next", sans-serif;
+
+      --page-width:   210mm;    /* same size as the original PDF */
+      --page-height:  347mm;    /* (also update @page at the bottom) */
+      --page-pad-x:   48px;
+      --page-pad-top: 96px;
+      --sidebar:      210px;    /* width of the left column     */
+      --gutter:       46px;     /* space between the columns    */
+    }
+
+    /* ==========================================================
+       2. PAGE
+       ========================================================== */
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      background: #e9e9ea;
+      color: var(--text);
+      font: 400 16px/1.2 var(--font-body);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    h1, h2, h3, p, ul { margin: 0; padding: 0; }
+    ul { list-style: none; }
+
+    .page {
+      display: flex;
+      flex-direction: column;
+      width: var(--page-width);
+      min-height: var(--page-height);
+      margin: 32px auto;
+      padding: var(--page-pad-top) var(--page-pad-x) 22px;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,.08), 0 8px 30px rgba(0,0,0,.08);
+    }
+
+    /* Two columns: sidebar on the left, main content on the right */
+    .columns {
+      display: grid;
+      grid-template-columns: var(--sidebar) 1fr;
+      column-gap: var(--gutter);
+    }
+
+    /* ==========================================================
+       3. HEADER (logo, name, contact)
+       ========================================================== */
+    .header { align-items: center; margin-bottom: 68px; }
+
+    .logo {
+      display: block;
+      text-align: center;
+      color: #222;
+      font: italic 400 17px/1.25 var(--font-display);
+    }
+    .logo img { display: block; width: 100%; height: auto; margin-bottom: 8px; }
+    .logo-site { display: inline-block; position: relative; }
+    .logo-site u { text-decoration-color: var(--pink); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+    .logo-site .hand { position: absolute; right: -28px; bottom: -6px; }
+
+    .name {
+      color: var(--ink);
+      font: 400 37px/1.1 var(--font-display);
+      letter-spacing: .2px;
+    }
+    .title {
+      margin: 10px 0 8px;
+      color: var(--text);
+      font: 300 24px/1.2 var(--font-display);
+      letter-spacing: 1.3px;
+    }
+    .contact { color: var(--muted); font: 300 17px/1.55 var(--font-display); }
+    .contact li:last-child { font-size: 15px; }
+    .contact a:hover { color: var(--pink); }
+
+    /* ==========================================================
+       4. SECTIONS
+       ========================================================== */
+    .section + .section { margin-top: 22px; }
+    .section-title {
+      margin-bottom: 16px;
+      border-bottom: 1.4px solid var(--pink);
+      color: var(--pink);
+      font: 200 47px/1 var(--font-display);
+      letter-spacing: .3px;
+      padding-bottom: 1px;
+    }
+
+    /* Small black heading inside a section ("Languages:", "Development") */
+    .group + .group { margin-top: 18px; }
+    .group-title { margin-bottom: 1px; color: var(--ink); font-weight: 400; font-size: 17px; }
+
+    .ink { color: var(--ink); }
+    .spacer { margin-top: 1.2em; }
+
+    /* » bullet list */
+    .bullets { --indent: 30px; --bullet-at: 10px; }
+    .bullets li { position: relative; padding-left: var(--indent); }
+    .bullets li::before {
+      content: "»";
+      position: absolute;
+      left: var(--bullet-at);
+      color: var(--text);
+    }
+
+    /* + list ("+ Illustration") */
+    .plus li::before { content: "+ "; }
+
+    /* ==========================================================
+       5. EDUCATION
+       ========================================================== */
+    .school {
+      display: grid;
+      grid-template-columns: 150px auto;
+      justify-content: start;
+    }
+    .school + .school { margin-top: 20px; }
+    .school-name { color: var(--ink); }
+    .school-degree { text-align: right; }
+    .school-degree b { color: var(--ink); font-weight: 400; }
+
+    /* ==========================================================
+       6. EXPERIENCE
+       ========================================================== */
+    .job + .job { margin-top: 34px; }
+    .job-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+    }
+    .job-company { color: var(--ink); font-weight: 400; font-size: inherit; }
+    .job-role { color: var(--muted); font-weight: 300; text-align: right; }
+    .job .bullets { --indent: 48px; --bullet-at: 8px; margin-top: 10px; }
+    .job .bullets li { hyphens: auto; -webkit-hyphens: auto; }
+    .job .bullets li + li { margin-top: 8px; }
+    .job .bullets li::before { font-size: 12px; line-height: 1.6; }
+
+    /* ==========================================================
+       7. GITHUB BADGE + FOOTER
+       ========================================================== */
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: auto;   /* pushes badge + footer to the bottom */
+      padding-top: 28px;
+    }
+    .social a {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: var(--pink);
+      font: 400 15px/1.2 var(--font-body);
+    }
+    .social svg.mark { width: 62px; height: 62px; fill: var(--pink); margin-bottom: 4px; }
+    .social .hand { position: absolute; left: 54px; top: 36px; }
+    .social a:hover span { text-decoration: underline; }
+
+    .footer {
+      margin-top: 30px;
+      padding-top: 14px;
+      border-top: 1.4px solid #000;
+      color: #333;
+      font: 300 15.5px/1 var(--font-body);
+      text-align: center;
+    }
+
+    .hand { width: 24px; height: 24px; fill: #fff; stroke: #222; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+
+    /* ==========================================================
+       8. SMALL SCREENS — stack everything into one column
+       ========================================================== */
+    @media screen and (max-width: 820px) {
+      body { background: #fff; }
+      .page { width: auto; min-height: 0; margin: 0; padding: 32px 16px 20px; box-shadow: none; }
+      .columns { grid-template-columns: 1fr; row-gap: 22px; }
+      .header { justify-items: center; text-align: center; margin-bottom: 40px; }
+      .logo { width: 190px; }
+      .name { font-size: 32px; }
+      .title { font-size: 20px; }
+      .main { order: -1; }               /* education + experience first */
+      .section-title { font-size: 40px; }
+      .school { grid-template-columns: 110px auto; }
+      .job-head { flex-wrap: wrap; }
+      .job .bullets { --indent: 28px; --bullet-at: 4px; }
+    }
+
+    /* ==========================================================
+       9. PRINT / SAVE AS PDF — one page, same size as original
+       ========================================================== */
+    @page { size: 210mm 347mm; margin: 0; }
+    @media print {
+      body { background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .page { margin: 0; box-shadow: none; min-height: calc(var(--page-height) - 2mm); }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Pointer-hand icon, defined once and reused with <use href="#hand"> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="hand" viewBox="0 0 24 24">
+      <path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L6 13.5V4a2 2 0 0 1 4 0v5a2 2 0 0 1 4 0v1a2 2 0 0 1 4 0z"/>
+      <path d="M10 9.5V11M14 10v1.5M18 11v1" fill="none"/>
+    </symbol>
+  </svg>
+
+  <main class="page">
+
+    <!-- ======================================================
+         HEADER
+         ====================================================== -->
+    <header class="header columns">
+      <a class="logo" href="https://supervanya.com">
+        <img src="logo.png" alt="supervanya logo">
+        <span class="logo-site">
+          <u>supervanya</u><br>.com
+          <svg class="hand" aria-hidden="true"><use href="#hand"/></svg>
+        </span>
+      </a>
+
+      <div>
+        <h1 class="name">vanya prokopovich</h1>
+        <p class="title">Information Architect</p>
+        <ul class="contact">
+          <li><a href="mailto:me@supervanya.com">me@supervanya.com</a></li>
+          <li><a href="tel:+17347077911">734 707 7911</a></li>
+        </ul>
+      </div>
+    </header>
+
+
+    <div class="columns">
+
+      <!-- ====================================================
+           LEFT COLUMN (sidebar)
+           ==================================================== -->
+      <aside class="sidebar">
+
+        <!-- SPEAK -->
+        <section class="section">
+          <h2 class="section-title">speak</h2>
+          <div class="group">
+            <h3 class="group-title">Languages:</h3>
+            <ul class="bullets">
+              <li><span class="ink">Proficient:</span><br>English, Russian, Belarusian</li>
+              <li><span class="ink">Intermediate:</span><br>Ukrainian, German</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- INTERESTS -->
+        <section class="section">
+          <h2 class="section-title">interests</h2>
+          <div class="group">
+            <h3 class="group-title">Design</h3>
+            <ul>
+              <li>Data Visualization;</li>
+              <li>Data Analysis;</li>
+              <li>Graphic Design;</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section">
+          <h2 class="section-title">skills</h2>
+
+          <div class="group">
+            <h3 class="group-title">Development</h3>
+            <ul>
+              <li>Python, Flask</li>
+              <li>C++</li>
+              <li>Web (Front + Back)</li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <h3 class="group-title">Software</h3>
+            <p>Photoshop, Illustrator, Sketch, After Effects, InDesign</p>
+            <p class="spacer">Sony Vegas, Rhino 3D</p>
+          </div>
+
+          <div class="group">
+            <h3 class="group-title">Additional Skills</h3>
+            <ul class="plus">
+              <li>Illustration</li>
+              <li>Photography</li>
+              <li>Video editing</li>
+              <li>Parkour / Stunting ;)</li>
+            </ul>
+          </div>
+        </section>
+
+      </aside>
+
+
+      <!-- ====================================================
+           RIGHT COLUMN (main)
+           ==================================================== -->
+      <div class="main">
+
+        <!-- EDUCATION — copy a <div class="school"> block to add one -->
+        <section class="section">
+          <h2 class="section-title">education</h2>
+
+          <div class="school">
+            <p>2015 - 2020</p>
+            <div>
+              <p class="school-name">University of Michigan, Ann Arbor</p>
+              <p class="school-degree"><b>BSI,</b> Data Analysis</p>
+            </div>
+          </div>
+
+          <div class="school">
+            <p>2010 - 2012</p>
+            <div>
+              <p class="school-name">Washtenaw Community College</p>
+              <p class="school-degree"><b>AA,</b> Graphic Design</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- EXPERIENCE — copy an <article class="job"> block to add one -->
+        <section class="section">
+          <h2 class="section-title">experience</h2>
+
+          <article class="job">
+            <p>May 2018 - PRES.</p>
+            <div class="job-head">
+              <h3 class="job-company">Desai Accelerator</h3>
+              <p class="job-role">Design/Tech Intern</p>
+            </div>
+            <p>Graphic Design, Infographics &amp; Visualizations</p>
+            <ul class="bullets">
+              <li>Developed internal project management system and a dashboard to reduce inefficiency in fast paced environment</li>
+              <li>Worked with founders of 6 startups to create interactive visualizations to deliver a message for a large audience of investors and executives</li>
+              <li>Produced compelling graphic and video material to be used for print and on the web.</li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <p>2012 - 2015</p>
+            <div class="job-head">
+              <h3 class="job-company">Backyard Brains</h3>
+              <p class="job-role">Graphic Designer</p>
+            </div>
+            <p>Graphic Design, Animation, Illustration, Product Design</p>
+            <ul class="bullets">
+              <li>Directed art and design processes at a fast growing neuroscience startup</li>
+              <li>Developed a smartphone-powered, portable DIY microscope for under $100 per unit through collaboration with a product designer; design processes included rapid prototyping using Adobe Creative Suite, industrial laser cutter, 3D printing and injection molding</li>
+            </ul>
+          </article>
+        </section>
+
+      </div>
+    </div>
+
+
+    <!-- ======================================================
+         LINKS (add more <a> blocks next to GitHub if you like)
+         ====================================================== -->
+    <nav class="social">
+      <a href="https://github.com/supervanya">
+        <svg class="mark" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        <svg class="hand" aria-hidden="true"><use href="#hand"/></svg>
+        <span>@supervanya</span>
+      </a>
+    </nav>
+
+    <footer class="footer">updated: 1 Sep 2018</footer>
+
+  </main>
+</body>
+</html>
