@@ -43,8 +43,8 @@
       --weight-light: 300;      /* job roles, "updated" footer           */
       --size-body:    16px;
 
-      --page-width:   210mm;    /* same size as the original PDF */
-      --page-height:  347mm;    /* (also update @page at the bottom) */
+      --page-width:   8.5in;   
+      --page-height:  14in;    /* (also update @page at the bottom) */
       --page-pad-x:   46px;
       --page-pad-top: 80px;
       --sidebar:      210px;    /* width of the left column     */
@@ -78,7 +78,8 @@
       display: flex;
       flex-direction: column;
       width: var(--page-width);
-      min-height: var(--page-height);
+      height: var(--page-height);
+      max-height: var(--page-height);
       margin: 32px auto;
       padding: var(--page-pad-top) var(--page-pad-x) 14px;
       background: #fff;
@@ -125,7 +126,6 @@
       font: 100 24px/1.2 var(--font-display);
       letter-spacing: 1.2px;
     }
-    .contact { color: var(--text); font: 100 14.5px/1.4 ; }
     .intro { margin-top: 14px; }
 
     /* ----------------------------------------------------------
@@ -215,6 +215,7 @@
     .footer {
       margin-top: auto;   /* pushes the footer to the bottom of the page */
       display: flex;
+      padding-top: 15px;
       flex-direction: column;
       align-items: center;
       gap: 26px;
@@ -261,7 +262,7 @@
     /* ----------------------------------------------------------
        9. PRINT / SAVE AS PDF — two pages, same size as original
        ---------------------------------------------------------- */
-    @page { size: 210mm 347mm; margin: 0; }
+    @page { size: var(--page-width) var(--page-height); margin: 0; }
     @media print {
       body { background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
       .page { margin: 0; box-shadow: none; min-height: calc(var(--page-height) - 2mm); break-after: page; }
@@ -306,9 +307,6 @@
       <div>
         <h1 class="name">ivan (vanya) prokopovich</h1>
         <p class="title">full-stack engineer / designer</p>
-        <ul class="contact">
-          <li><a href="mailto:ivan.d.prokopovich@gmail.com">ivan.d.prokopovich@gmail.com</a></li>
-        </ul>
         <p class="intro">Software engineer with a designer's touch and a passion for making complex things feel simple. Happiest doing hands-on product work for education and well-being tech.</p>
       </div>
     </header>
@@ -346,7 +344,9 @@
           <div class="group">
             <h3 class="group-title">Back end</h3>
             <ul>
-              <li>Node, NestJS, GraphQL, REST, PostgreSQL</li>
+              <li>Node, NestJS, REST</li>
+              <li>GraphQL, Hasura</li>
+              <li>PostgreSQL, OLAP</li>
             </ul>
           </div>
 
@@ -364,7 +364,7 @@
             <ul>
               <li>Colab, Jupyter, Pandas</li>
               <li>D3, R, Tableau</li>
-              <li>Observable</li>
+              <li>Observable, Metabase</li>
             </ul>
           </div>
 
@@ -422,14 +422,16 @@
 
             <div class="role">
               <div class="role-head">
-                <h4 class="role-title">Co-Director of Engineering</h4>
+                <h4 class="role-title">Co-Director of Engineering and Product</h4>
                 <p class="role-dates">2024 Mar - Pres.</p>
               </div>
               <ul class="bullets">
+                <li>Owned customer-facing BI: a customizable React + Cube.js dashboard backed by read replicas and a new OLAP database</li>
+                <li>Ran internal BI for the whole company. Used Metabase to create automated reporting and custom dashboards</li>
                 <li>Cut our CI/CD bill by 80% with monorepo task caching, cleaner dependencies and parallel runs</li>
-                <li>Drove adoption of agentic coding through an internal tooling harness</li>
-                <li>Partnered with Product, Design, Client Success and Ops to turn fuzzy customer problems into shipped products, like a fully customizable BI dashboard</li>
-                <li>Led hiring, mentoring and performance development for the team, and developed our CTO hiring framework</li>
+                <li>Drove agentic coding adoption with an internal harness</li>
+                <li>Rebuilt onboarding and performance reviews, led hiring, and owned our Engineering Manual</li>
+                <li>Worked across Product, Design, Client Success and Ops to turn fuzzy customer problems into shipped products</li>
               </ul>
             </div>
 
@@ -440,12 +442,10 @@
               </div>
               <ul class="bullets">
                 <li>Built full-stack, data-rich features with React, TypeScript, GraphQL, NestJS and Postgres</li>
-                <li>Designed and built Inherent Risk dashboards and assessment tools that replaced manual, outdated processes for security executives</li>
-                <li>Broke large, ambiguous initiatives into deliverable work and prototyped with customers before full builds</li>
-                <li>Moved heavy computation server-side and built offline-first workflows for users in secure, low-connectivity sites</li>
-                <!-- <li>Was the team's main voice for UX quality and accessibility; set up Storybook and visual regression testing with Design</li> -->
-                <!-- <li>Shipped an in-product knowledge base, AI assistant and feature flags with Customer Success</li> -->
-                <!-- <li>Started Wellness Wednesdays and quarterly Wellness Challenges (that's right, health is one of my top priorities)</li> -->
+                <li>Moved heavy computation server-side and built offline-first web-application for no-connectivity sites</li>
+                <li>Architected Report Generator end to end: planned and built a NestJS back end that generates .docx and .pdf reports from large assessments</li>
+                <li>Developed and drove adoption of a form library that was used in over a hundred applications</li>
+                <li>Wrote a Python pipeline to analyze 20 years of FBI crime data and recommend physical security improvements to clients</li>
               </ul>
             </div>
           </article>
@@ -496,11 +496,14 @@
               <h3 class="job-company">Circadian Risk Inc.</h3>
               <p class="job-role">Intern → Product Engineer III</p>
             </div>
-            <p>Continued my internship full-time. As Product Engineer III, led early prototyping and UX research with customers</p>
+            <p>Started as an intern working closely with the CTO, then went full-time. As Product Engineer III, led early prototyping and UX research with customers</p>
             <ul class="bullets">
-              <li>Worked closely with the CTO to design and ship features for the web portal and iOS app</li>
-              <li>Built a React wizard that walks clients through setting up their organization hierarchy (over 10x faster)</li>
-              <li>Wrote a Python analysis of 20 years of FBI crime data to recommend physical security improvements to clients</li>
+              <li>Led the Inherent Risk Trend Analysis initiative: planned it with our Director of Product and CTO and broke it into small, testable pieces</li>
+              <li>Gave its complex components their own state store and tests, an approach the team adopted</li>
+              <li>Moved API calls to GraphQL (Hasura + Apollo Client) and got deep into Postgres: views, aggregate queries, triggers, custom functions</li>
+              <li>Built a React wizard that walks clients through setting up their org hierarchy (over 10x faster location import)</li>
+              <li>Broke large, ambiguous initiatives into deliverable work and prototyped with customers before full builds</li>
+              <li>Turned manual risk assessments into Inherent Risk dashboards and tools for security executives</li>
             </ul>
           </article>
 
@@ -512,8 +515,7 @@
             </div>
             <p>Front-end engineering + data analysis for 6 startups</p>
             <ul class="bullets">
-              <li>Built an internal project management system + dashboard to cut down on messy task delegation</li>
-              <li>Built a website with authentication and content auto-populated by web scraping</li>
+              <li>Built an internal project management dashboard, plus a website with authentication and content pulled in by web scraping</li>
               <li>Made interactive visualizations, videos and flyers with founders to pitch investors and executives</li>
             </ul>
           </article>
